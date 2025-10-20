@@ -8,53 +8,73 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-8 relative">
-      {/* Grid background pattern */}
+      {/* Abstract Math-Inspired Geometric Background */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-              <path
-                d="M 60 0 L 0 0 0 60"
+            {/* Fine grid pattern */}
+            <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" strokeWidth="0.3" className="text-gray-300 dark:text-gray-700" opacity="0.5"/>
+            </pattern>
+            <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+              <rect width="100" height="100" fill="url(#smallGrid)"/>
+              <path d="M 100 0 L 0 0 0 100" fill="none" stroke="currentColor" strokeWidth="0.8" className="text-gray-400 dark:text-gray-600" opacity="0.4"/>
+            </pattern>
+          </defs>
+
+          {/* Grid background */}
+          <rect width="100%" height="100%" fill="url(#grid)" />
+
+          {/* Abstract mathematical curves - Bezier curves resembling topology/manifolds */}
+          <path d="M 100 200 Q 300 100, 500 300 T 900 200"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="0.5"
-                className="text-gray-200 dark:text-gray-800"
-                opacity="0.3"
-              />
-            </pattern>
-            <linearGradient id="fade" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="var(--background)" stopOpacity="0.7"/>
-              <stop offset="100%" stopColor="var(--background)" stopOpacity="1"/>
-            </linearGradient>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#grid)" />
-          <rect width="100%" height="100%" fill="url(#fade)" />
+                strokeWidth="1"
+                className="text-gray-400 dark:text-gray-600"
+                opacity="0.5"/>
+
+          <path d="M 200 600 Q 400 500, 600 650 T 1000 600"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+                className="text-gray-400 dark:text-gray-600"
+                opacity="0.4"/>
+
+          {/* Sine wave-like curves */}
+          <path d="M 0 400 Q 100 350, 200 400 T 400 400 T 600 400 T 800 400 T 1000 400 T 1200 400 T 1400 400 T 1600 400 T 1800 400 T 2000 400"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="0.8"
+                className="text-gray-400 dark:text-gray-600"
+                opacity="0.35"/>
+
+          {/* Geometric construction lines - like mathematical proofs */}
+          <line x1="10%" y1="20%" x2="30%" y2="60%" stroke="currentColor" strokeWidth="0.8" className="text-gray-400 dark:text-gray-600" opacity="0.4"/>
+          <line x1="30%" y1="60%" x2="50%" y2="30%" stroke="currentColor" strokeWidth="0.8" className="text-gray-400 dark:text-gray-600" opacity="0.4"/>
+          <line x1="10%" y1="20%" x2="50%" y2="30%" stroke="currentColor" strokeWidth="0.5" strokeDasharray="3,3" className="text-gray-400 dark:text-gray-600" opacity="0.3"/>
+
+          <line x1="70%" y1="25%" x2="85%" y2="70%" stroke="currentColor" strokeWidth="0.8" className="text-gray-400 dark:text-gray-600" opacity="0.4"/>
+          <line x1="85%" y1="70%" x2="95%" y2="40%" stroke="currentColor" strokeWidth="0.8" className="text-gray-400 dark:text-gray-600" opacity="0.4"/>
+          <line x1="70%" y1="25%" x2="95%" y2="40%" stroke="currentColor" strokeWidth="0.5" strokeDasharray="3,3" className="text-gray-400 dark:text-gray-600" opacity="0.3"/>
+
+          {/* Circles - like geometric constructions */}
+          <circle cx="20%" cy="45%" r="60" fill="none" stroke="currentColor" strokeWidth="0.8" className="text-gray-400 dark:text-gray-600" opacity="0.35"/>
+          <circle cx="80%" cy="55%" r="80" fill="none" stroke="currentColor" strokeWidth="0.8" className="text-gray-400 dark:text-gray-600" opacity="0.3"/>
+          <circle cx="45%" cy="75%" r="50" fill="none" stroke="currentColor" strokeWidth="0.6" className="text-gray-400 dark:text-gray-600" opacity="0.35"/>
+
+          {/* Small dots at intersections */}
+          <circle cx="30%" cy="60%" r="3" fill="currentColor" className="text-gray-500 dark:text-gray-500" opacity="0.5"/>
+          <circle cx="85%" cy="70%" r="3" fill="currentColor" className="text-gray-500 dark:text-gray-500" opacity="0.5"/>
+          <circle cx="20%" cy="45%" r="2" fill="currentColor" className="text-gray-500 dark:text-gray-500" opacity="0.5"/>
+
+          {/* Arcs resembling angles/sectors */}
+          <path d="M 150 300 A 40 40 0 0 1 190 340"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+                className="text-gray-400 dark:text-gray-600"
+                opacity="0.4"/>
         </svg>
-
-        {/* Subtle geometric shapes and lines */}
-        {/* Vertical lines */}
-        <div className="absolute top-[15%] right-[20%] w-px h-[40vh] bg-gradient-to-b from-transparent via-gray-300 dark:via-gray-700 to-transparent opacity-20 rotate-12"></div>
-        <div className="absolute top-[10%] left-[25%] w-px h-[35vh] bg-gradient-to-b from-transparent via-gray-300 dark:via-gray-700 to-transparent opacity-15 -rotate-6"></div>
-        <div className="absolute bottom-[15%] right-[40%] w-px h-[30vh] bg-gradient-to-b from-transparent via-gray-300 dark:via-gray-700 to-transparent opacity-25"></div>
-
-        {/* Horizontal lines */}
-        <div className="absolute bottom-[20%] left-[15%] w-[30vw] h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent opacity-20"></div>
-        <div className="absolute top-[30%] right-[10%] w-[25vw] h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent opacity-15"></div>
-        <div className="absolute top-[60%] left-[20%] w-[20vw] h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent opacity-20 rotate-3"></div>
-
-        {/* Diagonal lines */}
-        <div className="absolute top-[20%] left-[30%] w-[15vw] h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent opacity-15 rotate-45"></div>
-        <div className="absolute bottom-[30%] right-[25%] w-[18vw] h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent opacity-20 -rotate-45"></div>
-
-        {/* Small geometric shapes */}
-        <div className="absolute top-[40%] left-[10%] w-2 h-2 border border-gray-300 dark:border-gray-700 opacity-30 rotate-45"></div>
-        <div className="absolute top-[25%] right-[35%] w-3 h-3 border border-gray-300 dark:border-gray-700 opacity-20"></div>
-        <div className="absolute bottom-[35%] left-[35%] w-2 h-2 border border-gray-300 dark:border-gray-700 opacity-25"></div>
-        <div className="absolute top-[55%] right-[15%] w-4 h-4 border border-gray-300 dark:border-gray-700 opacity-15 rotate-12"></div>
-
-        {/* Circles */}
-        <div className="absolute top-[70%] right-[30%] w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700 opacity-30"></div>
-        <div className="absolute top-[18%] left-[45%] w-1 h-1 rounded-full bg-gray-300 dark:bg-gray-700 opacity-25"></div>
       </div>
 
       <div className="max-w-xl w-full">
