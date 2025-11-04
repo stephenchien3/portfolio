@@ -9,113 +9,134 @@ export default function Home() {
   const navLinks = [
     { name: "About", url: "#about" },
     { name: "Essays", url: "#essays" },
-    { name: "LinkedIn", url: "https://linkedin.com/in/stephenlchien", icon: true },
+    { name: "LinkedIn", url: "https://linkedin.com/in/stephenlchien", external: true },
   ];
 
   return (
-    <div className="min-h-screen p-8 relative">
-      {/* Abstract Math-Inspired Geometric Background */}
+    <div className="min-h-screen bg-background">
+      {/* Geometric Background Animations */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            {/* Fine grid pattern */}
-            <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
-              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" strokeWidth="0.3" className="text-gray-300 dark:text-gray-700" opacity="0.3"/>
-            </pattern>
-            <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
-              <rect width="100" height="100" fill="url(#smallGrid)"/>
-              <path d="M 100 0 L 0 0 0 100" fill="none" stroke="currentColor" strokeWidth="0.8" className="text-gray-400 dark:text-gray-600" opacity="0.25"/>
-            </pattern>
+            {/* Gradient for subtle coloring */}
+            <linearGradient id="spiralGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="currentColor" className="text-gray-300 dark:text-gray-700" stopOpacity="0.15" />
+              <stop offset="100%" stopColor="currentColor" className="text-gray-400 dark:text-gray-600" stopOpacity="0.05" />
+            </linearGradient>
           </defs>
 
-          {/* Grid background - full screen */}
-          <rect width="100%" height="100%" fill="url(#grid)" />
+          {/* Fibonacci Spiral - subtle, rotating slowly */}
+          <g className="fibonacci-spiral" opacity="0.12">
+            <path
+              d="M 400 400 Q 400 350, 450 350 Q 500 350, 500 400 Q 500 500, 400 500 Q 250 500, 250 350 Q 250 150, 450 150 Q 700 150, 700 400 Q 700 750, 350 750 Q -50 750, -50 300 Q -50 -150, 500 -150"
+              fill="none"
+              stroke="url(#spiralGradient)"
+              strokeWidth="1.5"
+            />
+          </g>
 
-          {/* Abstract mathematical curves - positioned on right side */}
-          <path d="M 1000 200 Q 1200 100, 1400 300 T 1800 200"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                className="text-gray-400 dark:text-gray-600"
-                opacity="0.3"/>
+          {/* Floating Triangles - various sizes */}
+          <g className="floating-triangles" opacity="0.08">
+            <polygon points="100,50 120,90 80,90" fill="currentColor" className="text-gray-400 dark:text-gray-600 triangle-1" />
+            <polygon points="800,200 830,250 770,250" fill="currentColor" className="text-gray-400 dark:text-gray-600 triangle-2" />
+            <polygon points="1200,500 1240,570 1160,570" fill="currentColor" className="text-gray-400 dark:text-gray-600 triangle-3" />
+            <polygon points="300,700 325,745 275,745" fill="currentColor" className="text-gray-400 dark:text-gray-600 triangle-4" />
+          </g>
 
-          <path d="M 900 600 Q 1100 500, 1300 650 T 1700 600"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                className="text-gray-400 dark:text-gray-600"
-                opacity="0.25"/>
+          {/* Parametric Curves - Euler-like spirals */}
+          <g className="parametric-curves" opacity="0.1">
+            <path
+              d="M 1000 300 C 1020 280, 1035 265, 1045 250 C 1055 235, 1060 220, 1062 205 C 1064 190, 1063 175, 1060 160"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+              className="text-gray-400 dark:text-gray-600 curve-1"
+            />
+            <path
+              d="M 200 600 C 220 585, 235 570, 245 555 C 255 540, 260 525, 262 510 C 264 495, 263 480, 260 465"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+              className="text-gray-400 dark:text-gray-600 curve-2"
+            />
+          </g>
 
-          {/* Geometric construction lines - positioned on right half */}
-          <line x1="60%" y1="20%" x2="75%" y2="50%" stroke="currentColor" strokeWidth="1" className="text-gray-400 dark:text-gray-600" opacity="0.3"/>
-          <line x1="75%" y1="50%" x2="85%" y2="25%" stroke="currentColor" strokeWidth="1" className="text-gray-400 dark:text-gray-600" opacity="0.3"/>
-          <line x1="60%" y1="20%" x2="85%" y2="25%" stroke="currentColor" strokeWidth="0.8" strokeDasharray="4,4" className="text-gray-400 dark:text-gray-600" opacity="0.25"/>
+          {/* Penrose-inspired Tessellation Elements */}
+          <g className="tessellation" opacity="0.06">
+            <path d="M 1100 100 L 1150 80 L 1170 120 Z" fill="currentColor" className="text-gray-400 dark:text-gray-600 tile-1" />
+            <path d="M 1170 120 L 1150 80 L 1200 100 L 1190 140 Z" fill="currentColor" className="text-gray-300 dark:text-gray-700 tile-2" />
+            <path d="M 150 450 L 180 430 L 190 470 Z" fill="currentColor" className="text-gray-400 dark:text-gray-600 tile-3" />
+            <path d="M 190 470 L 180 430 L 220 445 L 210 485 Z" fill="currentColor" className="text-gray-300 dark:text-gray-700 tile-4" />
+          </g>
 
-          <line x1="70%" y1="60%" x2="80%" y2="85%" stroke="currentColor" strokeWidth="1" className="text-gray-400 dark:text-gray-600" opacity="0.3"/>
-          <line x1="80%" y1="85%" x2="90%" y2="65%" stroke="currentColor" strokeWidth="1" className="text-gray-400 dark:text-gray-600" opacity="0.3"/>
-          <line x1="70%" y1="60%" x2="90%" y2="65%" stroke="currentColor" strokeWidth="0.8" strokeDasharray="4,4" className="text-gray-400 dark:text-gray-600" opacity="0.25"/>
-
-          {/* Circles - positioned on right side */}
-          <circle cx="75%" cy="40%" r="70" fill="none" stroke="currentColor" strokeWidth="1" className="text-gray-400 dark:text-gray-600" opacity="0.25"/>
-          <circle cx="85%" cy="70%" r="90" fill="none" stroke="currentColor" strokeWidth="1" className="text-gray-400 dark:text-gray-600" opacity="0.2"/>
-
-          {/* Small dots at intersections */}
-          <circle cx="75%" cy="50%" r="3" fill="currentColor" className="text-gray-500 dark:text-gray-500" opacity="0.3"/>
-          <circle cx="80%" cy="85%" r="3" fill="currentColor" className="text-gray-500 dark:text-gray-500" opacity="0.3"/>
+          {/* Orbiting Circles - golden ratio sizes */}
+          <g className="orbiting-circles" opacity="0.08">
+            <circle cx="50%" cy="30%" r="8" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-gray-400 dark:text-gray-600 orbit-1" />
+            <circle cx="70%" cy="60%" r="13" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-gray-400 dark:text-gray-600 orbit-2" />
+            <circle cx="30%" cy="70%" r="5" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-gray-400 dark:text-gray-600 orbit-3" />
+          </g>
         </svg>
       </div>
 
-      {/* Navigation */}
-      <nav className="fixed top-0 right-0 p-6 flex gap-5 text-sm z-10 items-center">
-        {navLinks.map((link) => (
-          <a
-            key={link.name}
-            href={link.url}
-            className="hover:opacity-60 transition-opacity duration-200"
-            target={link.icon ? "_blank" : undefined}
-            rel={link.icon ? "noopener noreferrer" : undefined}
-          >
-            {link.icon ? (
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-label="LinkedIn">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-            ) : (
-              link.name
-            )}
-          </a>
-        ))}
-      </nav>
+      {/* Fixed Header */}
+      <header className="fixed top-0 left-0 right-0 w-full z-50 h-14">
+        <div className="absolute inset-0 bg-background/25 backdrop-blur-sm"></div>
+        <nav className="relative w-full h-full flex items-center justify-between px-4 md:px-6">
+          <div className="font-serif text-[18px] md:text-[20px] leading-[1.2] tracking-[-0.01em] text-foreground">
+            <a href="/">Stephen</a>
+          </div>
+          <div className="font-mono text-[8px] md:text-[10px] leading-[1.3333] tracking-[-0.015em] flex gap-0.5 md:gap-1 text-foreground">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.url}
+                className="group inline-flex items-center px-0.5 md:px-1"
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
+              >
+                <span className="inline-block w-[1ch] text-right opacity-0 transition-opacity group-hover:opacity-100">(</span>
+                <span>{link.external ? "IN" : link.name}</span>
+                <span className="inline-block w-[1ch] text-left opacity-0 transition-opacity group-hover:opacity-100">)</span>
+              </a>
+            ))}
+          </div>
+        </nav>
+      </header>
 
-      {/* Main Content Container */}
-      <div className="pt-20 pl-12 md:pl-20">
-        {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-xl font-normal">
-            Stephen
-          </h1>
+      {/* Main Content */}
+      <main className="pt-32 pb-16 pl-12 pr-6">
+        <div className="max-w-[800px]">
+          <div className="flex flex-col gap-[14px] md:gap-[18px]">
+            {creations.map((creation, index) => (
+              <div key={creation.date} className="grid grid-cols-1 md:grid-cols-[140px_1fr] md:items-start">
+                <div className="font-sans text-[12px] leading-[1.3333] tracking-[-0.015em] text-muted-foreground tabular-nums mb-1 md:mb-0">
+                  {creation.date}
+                </div>
+                <div className="font-sans text-[12px] leading-[1.3333] tracking-[-0.015em] text-foreground min-w-0">
+                  {index === 0 ? (
+                    <span className="inline-flex items-center">
+                      {creation.title}
+                      <span className="ml-[2px] inline-block h-[11px] w-[1px] animate-pulse bg-foreground"></span>
+                    </span>
+                  ) : (
+                    creation.title
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+      </main>
 
-        {/* Timeline */}
-        <div className="space-y-4 max-w-3xl">
-          {creations.map((creation) => (
-            <div key={creation.date} className="flex gap-16">
-              <time className="text-sm w-24 flex-shrink-0">
-                {creation.date}
-              </time>
-              {creation.url ? (
-                <a
-                  href={creation.url}
-                  className="text-sm hover:opacity-60 transition-opacity duration-200"
-                >
-                  {creation.title}
-                </a>
-              ) : (
-                <span className="text-sm">{creation.title}</span>
-              )}
-            </div>
-          ))}
+      {/* Footer */}
+      <footer className="w-full flex justify-between items-center px-6 mt-4 relative z-[80] pb-12">
+        <div className="font-sans text-muted-foreground text-[9px] leading-[1.538] tracking-[-0.015em]">
+          © 2025 Stephen Chien.
         </div>
-      </div>
+        <div className="font-sans text-muted-foreground text-[9px] leading-[1.538] tracking-[-0.015em] tabular-nums">
+          Building in public.
+        </div>
+      </footer>
     </div>
   );
 }
