@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Stephen Chien",
-  description: "Things I've created",
+  title: "Stephen Chien - Curriculum Vitae",
+  description: "Academic CV and professional portfolio",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="latex-dark-auto">{children}</body>
     </html>
   );
 }
