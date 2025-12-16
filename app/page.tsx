@@ -1,7 +1,68 @@
+import Image from 'next/image';
+
 export default function CV() {
   return (
-    <main>
-      <article>
+    <main style={{position: 'relative', maxWidth: '1400px', margin: '0 auto', padding: '0 20px'}}>
+      {/* Left side images */}
+      <div style={{position: 'absolute', left: '-250px', top: '100px', width: '200px'}}>
+        <div style={{marginBottom: '40px'}}>
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/en/8/8b/Yoshitomo_Nara_-_Knife_Behind_Back_%282000%29.jpg"
+            alt="Yoshitomo Nara - Knife Behind Back"
+            width={200}
+            height={250}
+            style={{border: '1px solid #ddd', padding: '5px'}}
+          />
+          <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
+            Y. Nara, <i>Knife Behind Back</i> (2000) [1]
+          </p>
+        </div>
+
+        <div style={{marginBottom: '40px'}}>
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/a/ae/El_quitasol_%28Goya%29.jpg"
+            alt="Goya - The Parasol"
+            width={200}
+            height={260}
+            style={{border: '1px solid #ddd', padding: '5px'}}
+          />
+          <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
+            F. Goya, <i>The Parasol</i> (1777) [3]
+          </p>
+        </div>
+      </div>
+
+      {/* Right side images */}
+      <div style={{position: 'absolute', right: '-250px', top: '200px', width: '200px'}}>
+        <div style={{marginBottom: '40px'}}>
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/8/82/Cajal_actx_inter.jpg"
+            alt="Santiago Ramón y Cajal - Neurons"
+            width={200}
+            height={300}
+            style={{border: '1px solid #ddd', padding: '5px'}}
+          />
+          <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
+            S. Ramón y Cajal, <i>Pyramidal neurons of cerebral cortex</i> (1904) [2]
+          </p>
+        </div>
+
+        <div style={{marginBottom: '40px'}}>
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Cole_Thomas_The_Course_of_Empire_The_Savage_State_1836.jpg"
+            alt="Thomas Cole - The Course of Empire: The Savage State"
+            width={200}
+            height={130}
+            style={{border: '1px solid #ddd', padding: '5px'}}
+          />
+          <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
+            T. Cole, <i>The Course of Empire: The Savage State</i> (1836) [4]
+          </p>
+        </div>
+      </div>
+
+      {/* Centered content */}
+      <article style={{maxWidth: '700px', margin: '0 auto'}}>
         {/* Header */}
         <h1>Stephen Chien</h1>
         <p className="author">
@@ -53,6 +114,31 @@ export default function CV() {
               *Co-first authors
             </p>
           </div>
+        </section>
+
+        {/* Image Citations */}
+        <section id="image-citations" className="cv-section" style={{marginTop: '3rem', borderTop: '1px solid #ddd', paddingTop: '1rem'}}>
+          <h2>Image Citations</h2>
+          <ol style={{fontSize: '0.85em', lineHeight: '1.6'}}>
+            <li>
+              Yoshitomo Nara, <i>Knife Behind Back</i>, 2000. Acrylic on canvas. Fair use for educational purposes.
+            </li>
+            <li>
+              Santiago Ramón y Cajal, <i>Drawing of pyramidal neurons of the cerebral cortex</i>, 1904.
+              From &quot;Textura del Sistema Nervioso del Hombre y de los Vertebrados&quot;. Public domain.
+              Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Cajal_actx_inter.jpg">File:Cajal_actx_inter.jpg</a>
+            </li>
+            <li>
+              Francisco de Goya, <i>The Parasol (El quitasol)</i>, 1777. Oil on canvas,
+              Museo del Prado, Madrid. Public domain.
+              Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:El_quitasol_(Goya).jpg">File:El_quitasol_(Goya).jpg</a>
+            </li>
+            <li>
+              Thomas Cole, <i>The Course of Empire: The Savage State</i>, 1836. Oil on canvas,
+              New-York Historical Society. Public domain. Hudson River School.
+              Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Cole_Thomas_The_Course_of_Empire_The_Savage_State_1836.jpg">File:Cole_Thomas_The_Course_of_Empire_The_Savage_State_1836.jpg</a>
+            </li>
+          </ol>
         </section>
       </article>
     </main>
