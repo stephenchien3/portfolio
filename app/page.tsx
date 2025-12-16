@@ -23,10 +23,10 @@ export default function CV() {
             Recently I&apos;ve been building <a href="https://assesskit.com">assesskit</a>, a unified platform for collecting more granular user responses, such as response time, mouse tracking, etc.
           </p>
           <p>
-            I previously built <a href="https://apps.apple.com/us/app/buddhist-app-gautama/id6753130717">Gautama</a>, an iOS app for meditation.
+            I also built <a href="https://apps.apple.com/us/app/buddhist-app-gautama/id6753130717">gautama</a>, an iOS app for meditation.
           </p>
           <p>
-            I am very passionate about research and the joy of learning. I also like to read (mainly Toni Morrison), play basketball, and meditate in my spare time.
+            I am very passionate about research and the joy of learning. I also like to read (mainly Toni Morrison + Haruki Murakami), play basketball, and meditate in my spare time.
           </p>
           <p>
             I would love to talk or connect - please reach out!
