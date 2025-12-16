@@ -7,7 +7,7 @@ export default function CV() {
       <div style={{position: 'absolute', left: '-250px', top: '100px', width: '200px'}}>
         <div style={{marginBottom: '40px'}}>
           <Image
-            src="/assets/nara-knife-behind-back.jpg"
+            src="/assets/knife-behind-back.jpg"
             alt="Yoshitomo Nara - Knife Behind Back"
             width={200}
             height={250}
@@ -20,7 +20,7 @@ export default function CV() {
 
         <div style={{marginBottom: '40px'}}>
           <Image
-            src="/assets/goya-parasol.jpg"
+            src="/assets/parasol.jpeg"
             alt="Goya - The Parasol"
             width={200}
             height={260}
@@ -87,7 +87,7 @@ export default function CV() {
             I also built <a href="https://apps.apple.com/us/app/buddhist-app-gautama/id6753130717">gautama</a>, an iOS app for meditation.
           </p>
           <p>
-            I am very passionate about research and the joy of learning. I also like to read (mainly Toni Morrison + Haruki Murakami), play basketball, and meditate in my spare time.
+            I am very passionate about research and learning new things. I also like to read (mainly Toni Morrison + Haruki Murakami), play basketball, and meditate in my spare time.
           </p>
           <p>
             I would love to talk or connect - please reach out!
