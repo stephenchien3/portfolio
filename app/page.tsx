@@ -1,7 +1,72 @@
+'use client';
+
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function CV() {
+  const [selectedImage, setSelectedImage] = useState<{src: string, alt: string} | null>(null);
+
   return (
+    <>
+      {/* Image Modal */}
+      {selectedImage && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.9)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1000,
+            cursor: 'pointer'
+          }}
+          onClick={() => setSelectedImage(null)}
+        >
+          <div style={{position: 'relative', maxWidth: '90vw', maxHeight: '90vh'}}>
+            <Image
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              width={1200}
+              height={1200}
+              style={{
+                maxWidth: '90vw',
+                maxHeight: '90vh',
+                width: 'auto',
+                height: 'auto',
+                objectFit: 'contain'
+              }}
+            />
+            <button
+              style={{
+                position: 'absolute',
+                top: '-40px',
+                right: '0',
+                background: 'white',
+                border: 'none',
+                borderRadius: '50%',
+                width: '32px',
+                height: '32px',
+                fontSize: '20px',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedImage(null);
+              }}
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
+
     <main style={{position: 'relative', maxWidth: '1400px', margin: '0 auto', padding: '0 20px'}}>
       {/* Left side images */}
       <div style={{position: 'absolute', left: '-250px', top: '100px', width: '200px'}}>
@@ -11,7 +76,8 @@ export default function CV() {
             alt="Yoshitomo Nara - Knife Behind Back"
             width={200}
             height={250}
-            style={{border: '1px solid #ddd', padding: '5px'}}
+            style={{border: '1px solid #ddd', padding: '5px', cursor: 'pointer'}}
+            onClick={() => setSelectedImage({src: '/assets/knife-behind-back.jpg', alt: 'Yoshitomo Nara - Knife Behind Back'})}
           />
           <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
             Y. Nara, <i>Knife Behind Back</i> (2000) [1]
@@ -24,7 +90,8 @@ export default function CV() {
             alt="Goya - The Parasol"
             width={200}
             height={260}
-            style={{border: '1px solid #ddd', padding: '5px'}}
+            style={{border: '1px solid #ddd', padding: '5px', cursor: 'pointer'}}
+            onClick={() => setSelectedImage({src: '/assets/parasol.jpeg', alt: 'Goya - The Parasol'})}
           />
           <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
             F. Goya, <i>The Parasol</i> (1777) [3]
@@ -37,7 +104,8 @@ export default function CV() {
             alt="Ai Weiwei - Sunflower Seeds"
             width={200}
             height={150}
-            style={{border: '1px solid #ddd', padding: '5px'}}
+            style={{border: '1px solid #ddd', padding: '5px', cursor: 'pointer'}}
+            onClick={() => setSelectedImage({src: '/assets/sunflower-seeds.jpg', alt: 'Ai Weiwei - Sunflower Seeds'})}
           />
           <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
             Ai Weiwei, <i>Sunflower Seeds</i> (2010) [5]
@@ -53,7 +121,8 @@ export default function CV() {
             alt="Santiago Ramón y Cajal - Neurons"
             width={200}
             height={300}
-            style={{border: '1px solid #ddd', padding: '5px'}}
+            style={{border: '1px solid #ddd', padding: '5px', cursor: 'pointer'}}
+            onClick={() => setSelectedImage({src: '/assets/cajal-neurons.jpg', alt: 'Santiago Ramón y Cajal - Neurons'})}
           />
           <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
             S. Ramón y Cajal, <i>Pyramidal neurons of cerebral cortex</i> (1904) [2]
@@ -66,7 +135,8 @@ export default function CV() {
             alt="Thomas Cole - The Course of Empire: The Savage State"
             width={200}
             height={130}
-            style={{border: '1px solid #ddd', padding: '5px'}}
+            style={{border: '1px solid #ddd', padding: '5px', cursor: 'pointer'}}
+            onClick={() => setSelectedImage({src: '/assets/cole-savage-state.jpg', alt: 'Thomas Cole - The Course of Empire: The Savage State'})}
           />
           <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
             T. Cole, <i>The Course of Empire: The Savage State</i> (1836) [4]
@@ -130,5 +200,6 @@ export default function CV() {
         </section>
       </article>
     </main>
+    </>
   );
 }
