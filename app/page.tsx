@@ -21,6 +21,7 @@ export default function CV() {
       const img = new window.Image();
       img.src = src;
     });
+
   }, []);
 
   return (
@@ -55,39 +56,6 @@ export default function CV() {
                 objectFit: 'contain'
               }}
             />
-            <button
-              className="close-button"
-              style={{
-                position: 'absolute',
-                top: '-45px',
-                right: '0',
-                background: 'rgba(255, 255, 255, 0.95)',
-                border: 'none',
-                borderRadius: '50%',
-                width: '40px',
-                height: '40px',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                transition: 'all 0.2s ease',
-                boxShadow: '0 2px 8px rgba(0, 0, 0, 0.2)'
-              }}
-              onClick={(e) => {
-                e.stopPropagation();
-                setSelectedImage(null);
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'white';
-                e.currentTarget.style.transform = 'scale(1.1)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.95)';
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              <X size={20} strokeWidth={2.5} color="#000" />
-            </button>
           </div>
         </div>
       )}
@@ -99,8 +67,8 @@ export default function CV() {
           <Image
             src="/assets/knife-behind-back.jpg"
             alt="Yoshitomo Nara - Knife Behind Back"
-            width={160}
-            height={200}
+            width={200}
+            height={250}
             loading="lazy"
             style={{
               border: '1px solid #ddd',
@@ -127,8 +95,8 @@ export default function CV() {
           <Image
             src="/assets/parasol.jpg"
             alt="Goya - The Parasol"
-            width={160}
-            height={208}
+            width={200}
+            height={260}
             loading="lazy"
             style={{
               border: '1px solid #ddd',
@@ -155,8 +123,8 @@ export default function CV() {
           <Image
             src="/assets/sunflower-seeds.jpg"
             alt="Ai Weiwei - Sunflower Seeds"
-            width={160}
-            height={120}
+            width={200}
+            height={150}
             loading="lazy"
             style={{
               border: '1px solid #ddd',
@@ -186,8 +154,8 @@ export default function CV() {
           <Image
             src="/assets/cajal-neurons.jpg"
             alt="Santiago Ramón y Cajal - Neurons"
-            width={160}
-            height={240}
+            width={200}
+            height={300}
             loading="lazy"
             style={{
               border: '1px solid #ddd',
@@ -214,8 +182,8 @@ export default function CV() {
           <Image
             src="/assets/cole-savage-state.jpg"
             alt="Thomas Cole - The Course of Empire: The Savage State"
-            width={160}
-            height={104}
+            width={200}
+            height={130}
             loading="lazy"
             style={{
               border: '1px solid #ddd',
