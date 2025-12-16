@@ -224,7 +224,7 @@ export default function CV() {
             I&apos;m a current Masters student at Cornell studying CS.
           </p>
           <p>
-            I&apos;m interested in cognitive psychology, economic sociology, and a majority of the humanities.
+            I&apos;m interested in <a href="https://casasanto.com">cognitive psychology</a>, <a href="https://www.economyandsociety.org">economic sociology</a>, and a majority of the humanities.
           </p>
           <p>
             Recently I&apos;ve been building <a href="https://assesskit.com">assesskit</a>, a unified platform for collecting more granular user responses, such as response time, mouse tracking, etc.
