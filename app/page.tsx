@@ -233,7 +233,7 @@ export default function CV() {
             I also built <a href="https://apps.apple.com/us/app/buddhist-app-gautama/id6753130717">gautama</a>, an iOS app for meditation.
           </p>
           <p>
-            I am very passionate about research and learning. I also like to read (mainly Toni Morrison + Haruki Murakami), play basketball, and meditate in my spare time.
+            I am very passionate about research and learning. I also like to read (mainly Toni Morrison & Haruki Murakami), play basketball, and meditate in my spare time.
           </p>
           <p>
             I would love to talk or connect - please reach out!
