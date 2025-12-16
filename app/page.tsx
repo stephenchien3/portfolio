@@ -1,11 +1,27 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
 export default function CV() {
   const [selectedImage, setSelectedImage] = useState<{src: string, alt: string} | null>(null);
+
+  // Preload all images on mount to eliminate click lag
+  useEffect(() => {
+    const imagesToPreload = [
+      '/assets/knife-behind-back.jpg',
+      '/assets/parasol.jpg',
+      '/assets/sunflower-seeds.jpg',
+      '/assets/cajal-neurons.jpg',
+      '/assets/cole-savage-state.jpg'
+    ];
+
+    imagesToPreload.forEach((src) => {
+      const img = new window.Image();
+      img.src = src;
+    });
+  }, []);
 
   return (
     <>
@@ -83,9 +99,23 @@ export default function CV() {
           <Image
             src="/assets/knife-behind-back.jpg"
             alt="Yoshitomo Nara - Knife Behind Back"
-            width={200}
-            height={250}
-            style={{border: '1px solid #ddd', padding: '5px', cursor: 'pointer'}}
+            width={160}
+            height={200}
+            loading="lazy"
+            style={{
+              border: '1px solid #ddd',
+              padding: '5px',
+              cursor: 'pointer',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'scale(1.05)';
+              e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
             onClick={() => setSelectedImage({src: '/assets/knife-behind-back.jpg', alt: 'Yoshitomo Nara - Knife Behind Back'})}
           />
           <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
@@ -97,9 +127,23 @@ export default function CV() {
           <Image
             src="/assets/parasol.jpg"
             alt="Goya - The Parasol"
-            width={200}
-            height={260}
-            style={{border: '1px solid #ddd', padding: '5px', cursor: 'pointer'}}
+            width={160}
+            height={208}
+            loading="lazy"
+            style={{
+              border: '1px solid #ddd',
+              padding: '5px',
+              cursor: 'pointer',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'scale(1.05)';
+              e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
             onClick={() => setSelectedImage({src: '/assets/parasol.jpg', alt: 'Goya - The Parasol'})}
           />
           <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
@@ -111,9 +155,23 @@ export default function CV() {
           <Image
             src="/assets/sunflower-seeds.jpg"
             alt="Ai Weiwei - Sunflower Seeds"
-            width={200}
-            height={150}
-            style={{border: '1px solid #ddd', padding: '5px', cursor: 'pointer'}}
+            width={160}
+            height={120}
+            loading="lazy"
+            style={{
+              border: '1px solid #ddd',
+              padding: '5px',
+              cursor: 'pointer',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'scale(1.05)';
+              e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
             onClick={() => setSelectedImage({src: '/assets/sunflower-seeds.jpg', alt: 'Ai Weiwei - Sunflower Seeds'})}
           />
           <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
@@ -128,9 +186,23 @@ export default function CV() {
           <Image
             src="/assets/cajal-neurons.jpg"
             alt="Santiago Ramón y Cajal - Neurons"
-            width={200}
-            height={300}
-            style={{border: '1px solid #ddd', padding: '5px', cursor: 'pointer'}}
+            width={160}
+            height={240}
+            loading="lazy"
+            style={{
+              border: '1px solid #ddd',
+              padding: '5px',
+              cursor: 'pointer',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'scale(1.05)';
+              e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
             onClick={() => setSelectedImage({src: '/assets/cajal-neurons.jpg', alt: 'Santiago Ramón y Cajal - Neurons'})}
           />
           <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
@@ -142,9 +214,23 @@ export default function CV() {
           <Image
             src="/assets/cole-savage-state.jpg"
             alt="Thomas Cole - The Course of Empire: The Savage State"
-            width={200}
-            height={130}
-            style={{border: '1px solid #ddd', padding: '5px', cursor: 'pointer'}}
+            width={160}
+            height={104}
+            loading="lazy"
+            style={{
+              border: '1px solid #ddd',
+              padding: '5px',
+              cursor: 'pointer',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'scale(1.05)';
+              e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
             onClick={() => setSelectedImage({src: '/assets/cole-savage-state.jpg', alt: 'Thomas Cole - The Course of Empire: The Savage State'})}
           />
           <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
