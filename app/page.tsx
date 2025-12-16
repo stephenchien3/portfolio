@@ -30,6 +30,19 @@ export default function CV() {
             F. Goya, <i>The Parasol</i> (1777) [3]
           </p>
         </div>
+
+        <div style={{marginBottom: '40px'}}>
+          <Image
+            src="/assets/sunflower-seeds.jpg"
+            alt="Ai Weiwei - Sunflower Seeds"
+            width={200}
+            height={150}
+            style={{border: '1px solid #ddd', padding: '5px'}}
+          />
+          <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
+            Ai Weiwei, <i>Sunflower Seeds</i> (2010) [5]
+          </p>
+        </div>
       </div>
 
       {/* Right side images */}
