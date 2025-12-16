@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import { X } from 'lucide-react';
 
 export default function CV() {
   const [selectedImage, setSelectedImage] = useState<{src: string, alt: string} | null>(null);
@@ -26,12 +27,10 @@ export default function CV() {
           }}
           onClick={() => setSelectedImage(null)}
         >
-          <div style={{position: 'relative', maxWidth: '90vw', maxHeight: '90vh'}}>
-            <Image
+          <div style={{position: 'relative', maxWidth: '90vw', maxHeight: '90vh', display: 'flex'}}>
+            <img
               src={selectedImage.src}
               alt={selectedImage.alt}
-              width={1200}
-              height={1200}
               style={{
                 maxWidth: '90vw',
                 maxHeight: '90vh',
@@ -41,27 +40,37 @@ export default function CV() {
               }}
             />
             <button
+              className="close-button"
               style={{
                 position: 'absolute',
-                top: '-40px',
+                top: '-45px',
                 right: '0',
-                background: 'white',
+                background: 'rgba(255, 255, 255, 0.95)',
                 border: 'none',
                 borderRadius: '50%',
-                width: '32px',
-                height: '32px',
-                fontSize: '20px',
+                width: '40px',
+                height: '40px',
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                transition: 'all 0.2s ease',
+                boxShadow: '0 2px 8px rgba(0, 0, 0, 0.2)'
               }}
               onClick={(e) => {
                 e.stopPropagation();
                 setSelectedImage(null);
               }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'white';
+                e.currentTarget.style.transform = 'scale(1.1)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.95)';
+                e.currentTarget.style.transform = 'scale(1)';
+              }}
             >
-              ×
+              <X size={20} strokeWidth={2.5} color="#000" />
             </button>
           </div>
         </div>
@@ -86,12 +95,12 @@ export default function CV() {
 
         <div style={{marginBottom: '40px'}}>
           <Image
-            src="/assets/parasol.jpeg"
+            src="/assets/parasol.jpg"
             alt="Goya - The Parasol"
             width={200}
             height={260}
             style={{border: '1px solid #ddd', padding: '5px', cursor: 'pointer'}}
-            onClick={() => setSelectedImage({src: '/assets/parasol.jpeg', alt: 'Goya - The Parasol'})}
+            onClick={() => setSelectedImage({src: '/assets/parasol.jpg', alt: 'Goya - The Parasol'})}
           />
           <p style={{fontSize: '0.7em', marginTop: '5px', fontStyle: 'italic'}}>
             F. Goya, <i>The Parasol</i> (1777) [3]
