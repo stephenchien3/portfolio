@@ -233,6 +233,9 @@ export default function CV() {
             I also built <a href="https://apps.apple.com/us/app/buddhist-app-gautama/id6753130717">gautama</a>, an iOS app for meditation.
           </p>
           <p>
+            I&apos;m currently building <a href="https://cajal-health.vercel.app">Cajal</a>, AI appeals for denied insurance claims. ultrathink
+          </p>
+          <p>
             I am very passionate about research and learning. I also like to read (mainly Toni Morrison & Haruki Murakami), play basketball, and meditate in my spare time.
           </p>
           <p>
