@@ -20,7 +20,7 @@ export default function Morrison() {
       <div className="detail-content">
         <p>
           Fully built this one from scratch. The idea was simple: what if you could write
-          with the voice of your favorite authors? Not plagiarism, not copying—but having
+          with the voice of your favorite authors? Not plagiarism, not copying, but having
           an AI that understood the rhythm, the sentence structure, the way certain writers
           approach language.
         </p>
@@ -28,7 +28,7 @@ export default function Morrison() {
         <p>
           The app uses agents to mimic different authors and writing styles. You can write
           in the voice of Hemingway's sparse precision or Woolf's flowing consciousness.
-          There are also moods—different tones and emotional registers you can dial up or
+          There are also moods. Different tones and emotional registers you can dial up or
           down depending on what you're trying to say.
         </p>
 
@@ -40,7 +40,7 @@ export default function Morrison() {
 
         <p>
           I was never sure about the legality or legitimacy of mimicking authors. An author's
-          voice is their own—can you capture it? Should you? These questions don't have
+          voice is their own. Can you capture it? Should you? These questions don't have
           clean answers. But the experiment taught me a lot about how style works, how
           voice emerges from word choice and rhythm and the things left unsaid.
         </p>

@@ -32,6 +32,10 @@ export default function Elsewhere() {
           <Link href="/elsewhere/contact">contact</Link>
           <span className="desc">how to reach me</span>
         </div>
+        <div className="tree-item">
+          <Link href="/elsewhere/video-games">video games</Link>
+          <span className="desc">things i play</span>
+        </div>
       </div>
     </main>
   );

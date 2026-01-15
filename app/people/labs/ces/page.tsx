@@ -32,7 +32,7 @@ export default function CES() {
 
         <p>
           The hypothesis predicts that billionaires should thrive in democratic, free-market
-          economies—places where property rights are secure, contracts are enforced, and
+          economies. Places where property rights are secure, contracts are enforced, and
           creative destruction is allowed.
         </p>
 
@@ -44,8 +44,8 @@ export default function CES() {
         </p>
 
         <p>
-          My research examined why this is—what conditions in China allow billionaire
-          wealth creation outside the Acemoglu-Robinson framework.
+          My research examined why. What conditions in China allow billionaire
+          wealth creation outside the Acemoglu-Robinson framework?
         </p>
       </div>
     </main>

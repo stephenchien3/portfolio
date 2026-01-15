@@ -37,7 +37,7 @@ export default function Research() {
               IEEE MASS 2025, Chicago
             </p>
             <p style={{ fontSize: '0.9em', color: '#aaa', marginTop: '0.5rem' }}>
-              Millimeter-wave sensing is everywhere now—gesture recognition, health monitoring,
+              Millimeter-wave sensing is everywhere now. Gesture recognition, health monitoring,
               presence detection. But these systems leak information. We showed that membership
               inference attacks can determine whether a specific person was in the training
               data, raising serious privacy concerns for deployed mmWave systems.

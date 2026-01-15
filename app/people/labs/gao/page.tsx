@@ -23,7 +23,7 @@ export default function Gao() {
         <h3>digital twin ports</h3>
 
         <p>
-          A digital twin is a virtual replica of a physical system—updated in real time
+          A digital twin is a virtual replica of a physical system, updated in real time
           with sensor data, used to simulate, predict, and optimize operations.
         </p>
 

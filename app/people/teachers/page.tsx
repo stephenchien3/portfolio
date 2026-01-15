@@ -18,7 +18,9 @@ export default function Teachers() {
       <p className="page-desc">those who shaped how i think</p>
 
       <div className="detail-content">
-        <p>coming soon</p>
+        <p>
+          Thanks to everyone who has taught me. In particular, Mr. Worrall.
+        </p>
       </div>
     </main>
   );

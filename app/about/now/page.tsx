@@ -30,7 +30,7 @@ export default function Now() {
         </p>
 
         <p>
-          Reading a lot. Currently working through more philosophy—phenomenology, philosophy
+          Reading a lot. Currently working through more philosophy. Phenomenology, philosophy
           of mind, questions about consciousness and embodiment that connect to my research
           in cognitive science.
         </p>

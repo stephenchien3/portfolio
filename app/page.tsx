@@ -73,7 +73,15 @@ export default function Home() {
             <div className="tree-item">
               <Link href="/elsewhere/contact">contact</Link>
             </div>
+            <div className="tree-item">
+              <Link href="/elsewhere/video-games">video games</Link>
+            </div>
           </div>
+        </div>
+
+        <div className="tree-item">
+          <Link href="/writings">writings</Link>
+          <span className="desc">i also like to write things</span>
         </div>
       </div>
     </main>

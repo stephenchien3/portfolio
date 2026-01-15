@@ -39,7 +39,7 @@ export default function Gautama() {
 
         <p>
           The readings include selections from the Dhammapada, the Heart Sutra, Thich Nhat
-          Hanh, and others. Short passages you can sit with. The diary is private—a place
+          Hanh, and others. Short passages you can sit with. The diary is private, a place
           to notice what arises without judgment.
         </p>
 

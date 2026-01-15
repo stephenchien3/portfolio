@@ -17,9 +17,7 @@ export default function About() {
 
       <div className="detail-content">
         <p>
-          CS Masters student at Cornell. Grew up in <Link href="/elsewhere/places">Arcadia, California</Link>, a suburb of LA
-          in the San Gabriel Valley, known for good Chinese food and the Santa Anita
-          racetrack.
+          CS Masters student at Cornell. Grew up in <Link href="/elsewhere/places">Los Angeles</Link>.
         </p>
 
         <p>
@@ -45,6 +43,10 @@ export default function About() {
         <p>
           I like <Link href="/elsewhere/art">art that tells stories</Link>. Yoshitomo Nara, Goya, Ai Weiwei, Cajal's neuron
           drawings, Thomas Cole.
+        </p>
+
+        <p>
+          I also like to <Link href="/writings">write</Link>.
         </p>
       </div>
 

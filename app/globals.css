@@ -9,12 +9,27 @@ body {
 .home-container {
   max-width: 600px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 20px;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.home-container .tree-item {
+  margin-bottom: 0.4rem;
+}
+
+.home-container .tree .tree {
+  margin-top: 0.2rem;
+}
+
+body:has(.home-container) {
+  overflow: hidden;
 }
 
 .site-title {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Tree structure */
