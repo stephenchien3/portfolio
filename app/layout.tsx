@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Stephen Chien - Curriculum Vitae",
-  description: "Academic CV and professional portfolio",
+  title: "Stephen Chien",
+  description: "Personal site",
 };
 
 export default function RootLayout({
