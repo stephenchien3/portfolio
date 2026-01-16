@@ -19,25 +19,24 @@ export default function CajalHealth() {
 
       <div className="detail-content">
         <p>
-          Co-founder. The American healthcare system is broken in ways that are hard to
-          articulate until you see them up close. Insurance companies deny claims constantly,
-          prior authorizations, experimental treatments, out-of-network care, procedures deemed
-          not medically necessary by someone who has never met the patient.
+          Co-founder. Insurance denials represent 5-10% of claims submitted, worth billions
+          in lost revenue for healthcare practices. The manual appeal process is so
+          time-consuming that many clinics simply write off denials rather than fight them.
         </p>
 
         <p>
-          Most people do not appeal. The process is confusing, the language is dense, and
-          the odds feel stacked against you. But appeals work more often than people think.
-          The problem is that writing a good appeal requires citing medical literature,
-          understanding policy language, and making a coherent argument. That is hard for
-          a patient to do alone.
+          The process requires clinical knowledge to find relevant documentation, is
+          error-prone with missed deadlines and incomplete submissions, and does not scale.
+          Our immediate family all own healthcare clinics, so we have seen this problem
+          up close for years.
         </p>
 
         <p>
-          We built AI to do it. The system reads the denial letter, understands why the
-          claim was rejected, pulls relevant clinical guidelines and peer-reviewed studies,
-          and generates a personalized appeal letter. It is not a form letter, it is specific
-          to the patient, the diagnosis, the insurer, and the reason for denial.
+          We built AI call and email agents tailored to smaller specialized healthcare
+          clinics and their specific billing codes. We have technical experience with EMR
+          systems, which lets us integrate directly into existing workflows. While our
+          primary focus is helping clinics recover revenue, we help individual patients
+          as well.
         </p>
 
         <h3>what i did</h3>
