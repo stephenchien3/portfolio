@@ -21,10 +21,6 @@ export default function Before() {
 
 
         <p>
-          In my past lives I have played a ton of basketball, read, and liked to sleep. Wasn't really good at the basketball part haha.
-        </p>
-
-        <p>
           Undergrad at Cornell. Studied computer science but spent as much time in the psychology department and the library as in the CS building. The interdisciplinary stuff was always more interesting to me than the pure technical work.
         </p>
 
