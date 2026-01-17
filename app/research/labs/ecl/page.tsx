@@ -7,9 +7,9 @@ export default function ECL() {
       <div className="breadcrumb">
         <Link href="/">~</Link>
         <span>/</span>
-        <Link href="/people">people</Link>
+        <Link href="/research">people</Link>
         <span>/</span>
-        <Link href="/people/labs">labs</Link>
+        <Link href="/research/labs">labs</Link>
         <span>/</span>
         <span>ecl</span>
       </div>
@@ -21,10 +21,10 @@ export default function ECL() {
 
       <div className="tree">
         <div className="tree-item">
-          <Link href="/people/labs/ecl/action-asymmetry">action asymmetry hypothesis</Link>
+          <Link href="/research/labs/ecl/action-asymmetry">action asymmetry hypothesis</Link>
         </div>
         <div className="tree-item">
-          <Link href="/people/labs/ecl/sword-and-shield">sword and shield hypothesis</Link>
+          <Link href="/research/labs/ecl/sword-and-shield">sword and shield hypothesis</Link>
         </div>
       </div>
     </main>

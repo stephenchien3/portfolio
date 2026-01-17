@@ -8,11 +8,11 @@ export default function ActionAsymmetry() {
       <div className="breadcrumb">
         <Link href="/">~</Link>
         <span>/</span>
-        <Link href="/people">people</Link>
+        <Link href="/research">people</Link>
         <span>/</span>
-        <Link href="/people/labs">labs</Link>
+        <Link href="/research/labs">labs</Link>
         <span>/</span>
-        <Link href="/people/labs/ecl">ecl</Link>
+        <Link href="/research/labs/ecl">ecl</Link>
         <span>/</span>
         <span>action asymmetry hypothesis</span>
       </div>

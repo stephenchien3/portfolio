@@ -7,7 +7,7 @@ export default function Teachers() {
       <div className="breadcrumb">
         <Link href="/">~</Link>
         <span>/</span>
-        <Link href="/people">people</Link>
+        <Link href="/research">research</Link>
         <span>/</span>
         <span>teachers</span>
       </div>

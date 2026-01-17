@@ -36,23 +36,23 @@ export default function Home() {
               <Link href="/things/assesskit">assesskit</Link>
             </div>
             <div className="tree-item">
-              <Link href="/things/research">research</Link>
-            </div>
-            <div className="tree-item">
               <Link href="/things/morrison">morrison</Link>
             </div>
           </div>
         </div>
 
         <div className="tree-item">
-          <Link href="/people">people</Link>
-          <span className="desc">who i know</span>
+          <Link href="/research">research</Link>
+          <span className="desc">academic work</span>
           <div className="tree">
             <div className="tree-item">
-              <Link href="/people/labs">labs</Link>
+              <Link href="/research/labs">labs</Link>
             </div>
             <div className="tree-item">
-              <Link href="/people/teachers">teachers</Link>
+              <Link href="/research/publications">publications</Link>
+            </div>
+            <div className="tree-item">
+              <Link href="/research/teachers">teachers</Link>
             </div>
           </div>
         </div>

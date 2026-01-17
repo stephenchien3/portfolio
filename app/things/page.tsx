@@ -29,10 +29,6 @@ export default function Things() {
           <span className="desc">response collection</span>
         </div>
         <div className="tree-item">
-          <Link href="/things/research">research</Link>
-          <span className="desc">papers and publications</span>
-        </div>
-        <div className="tree-item">
           <Link href="/things/morrison">morrison</Link>
           <span className="desc">AI writing assistant</span>
         </div>

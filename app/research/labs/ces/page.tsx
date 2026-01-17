@@ -7,9 +7,9 @@ export default function CES() {
       <div className="breadcrumb">
         <Link href="/">~</Link>
         <span>/</span>
-        <Link href="/people">people</Link>
+        <Link href="/research">people</Link>
         <span>/</span>
-        <Link href="/people/labs">labs</Link>
+        <Link href="/research/labs">labs</Link>
         <span>/</span>
         <span>ces</span>
       </div>

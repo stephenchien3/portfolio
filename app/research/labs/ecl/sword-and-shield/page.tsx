@@ -7,11 +7,11 @@ export default function SwordAndShield() {
       <div className="breadcrumb">
         <Link href="/">~</Link>
         <span>/</span>
-        <Link href="/people">people</Link>
+        <Link href="/research">people</Link>
         <span>/</span>
-        <Link href="/people/labs">labs</Link>
+        <Link href="/research/labs">labs</Link>
         <span>/</span>
-        <Link href="/people/labs/ecl">ecl</Link>
+        <Link href="/research/labs/ecl">ecl</Link>
         <span>/</span>
         <span>sword and shield hypothesis</span>
       </div>

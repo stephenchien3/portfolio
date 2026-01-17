@@ -7,7 +7,7 @@ export default function Labs() {
       <div className="breadcrumb">
         <Link href="/">~</Link>
         <span>/</span>
-        <Link href="/people">people</Link>
+        <Link href="/research">people</Link>
         <span>/</span>
         <span>labs</span>
       </div>
@@ -25,10 +25,10 @@ export default function Labs() {
           <span className="desc">embodied cognition</span>
           <div className="tree">
             <div className="tree-item">
-              <Link href="/people/labs/ecl">action asymmetry hypothesis</Link>
+              <Link href="/research/labs/ecl">action asymmetry hypothesis</Link>
             </div>
             <div className="tree-item">
-              <Link href="/people/labs/ecl">sword and shield hypothesis</Link>
+              <Link href="/research/labs/ecl">sword and shield hypothesis</Link>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function Labs() {
           <span className="desc">infrastructure systems</span>
           <div className="tree">
             <div className="tree-item">
-              <Link href="/people/labs/gao">digital twin ports</Link>
+              <Link href="/research/labs/gao">digital twin ports</Link>
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function Labs() {
           <span className="desc">economic sociology</span>
           <div className="tree">
             <div className="tree-item">
-              <Link href="/people/labs/ces">billionaires and institutions</Link>
+              <Link href="/research/labs/ces">billionaires and institutions</Link>
             </div>
           </div>
         </div>
