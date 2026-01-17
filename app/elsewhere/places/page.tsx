@@ -23,28 +23,27 @@ export default function Places() {
           <span className="desc">where i grew up</span>
           <div className="detail-content" style={{ marginTop: '0.5rem', marginLeft: '0' }}>
             <p style={{ fontSize: '0.9em', color: '#aaa' }}>
-              Suburb of Los Angeles, in the San Gabriel Valley. About twenty minutes from
-              downtown depending on traffic, which means anywhere from twenty minutes to
-              two hours. Known for the Santa Anita racetrack and the Los Angeles County
-              Arboretum. The San Gabriel Valley has some of the best Chinese food in America.
+              Suburb of Los Angeles, in the San Gabriel Valley. Known for the Santa Anita racetrack and the Los Angeles 
+              Arboretum. The mall is nice too. 
             </p>
           </div>
         </div>
         <div className="tree-item">
           <span>the bronx</span>
           <span className="desc">riverdale</span>
+          <div className="detail-content" style={{ marginTop: '0.5rem', marginLeft: '0' }}>
+            <p style={{ fontSize: '0.9em', color: '#aaa' }}>
+              Moved here around 11.
+            </p>
+          </div>
         </div>
         <div className="tree-item">
           <span>manhattan</span>
-          <span className="desc">upper west side</span>
-        </div>
-        <div className="tree-item">
-          <span>brooklyn</span>
-          <span className="desc">bensonhurst</span>
+          <span className="desc">upper west side, where i currently reside</span>
         </div>
         <div className="tree-item">
           <span>ithaca, ny</span>
-          <span className="desc">where i am now</span>
+          <span className="desc">college</span>
           <div className="detail-content" style={{ marginTop: '0.5rem', marginLeft: '0' }}>
             <p style={{ fontSize: '0.9em', color: '#aaa' }}>
               Cornell sits on a hill above Cayuga Lake. The campus is beautiful in a way
