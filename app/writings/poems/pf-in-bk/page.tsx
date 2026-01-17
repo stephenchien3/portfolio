@@ -30,9 +30,9 @@ hasidic jews on the smith machine and teenagers doing pull-ups
 
 and treadmill-walking asian grandmas where
 
-of course it is a 'judgement free' zone but
+it is a 'judgement free' zone but
 
-you know, people got to go places and
+people got to go places and
 
 if you're doing more than three sets you gotta go,
 
