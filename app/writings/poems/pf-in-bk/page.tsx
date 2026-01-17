@@ -24,7 +24,7 @@ export default function PfInBk() {
 
 its a collection of people who you'd never interact with
 
-except on a last name basis, but somehow are weirdly connected like
+except on a last name basis, but are weirdly connected like
 
 hasidic jews on the smith machine and teenagers doing pull-ups
 
