@@ -19,26 +19,20 @@ export default function VideoGames() {
 
       <div className="detail-content">
         <p>
-          Used to play TF2 and CS:GO back in high school. TF2 was chaotic and fun, a game
-          where you could just jump in and mess around. CS:GO was more serious, more
-          competitive. I spent hours learning spray patterns and callouts. It was a good
-          way to hang out with friends online.
+          I like first person shooters such as TF2 and Counter-Strike. 
+          I also enjoy games such as RDR2 and Balatro. 
         </p>
 
         <p>
-          Stopped playing in college to pursue other things. 
+          My current games I really play are Civ 6 and Smash. My favorite is Montezuma, or the Aztecs
+          since they start with an extra warrior unit. Although I can run a strong Australia. For smash, 
+          I main King K Rool.
         </p>
 
         <p>
-          Nowadays I occasionally play a little Civ 6. My favorite is Montezuma of the Aztecs
-          since they start with an extra warrior unit and can attack quickly. There is
-          something satisfying about an early rush, although I can run a strong Australia too, playing the
-          long game with those appeal bonuses.
+          Unfortunaely, I sort of stopped playing in college to pursue other interests. 
         </p>
 
-        <p>
-          Also play Smash. King K. Rool main.
-        </p>
       </div>
     </main>
   );

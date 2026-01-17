@@ -17,18 +17,17 @@ export default function About() {
 
       <div className="detail-content">
         <p>
-          CS Masters student at Cornell. Grew up in <Link href="/elsewhere/places">Los Angeles</Link>.
+          CS Masters student at Cornell. LA + NYC. 
         </p>
 
         <p>
-          I try to make technology for social good. This sounds like a cliche but I mean
-          it specifically: I am interested in systems that help people navigate other
+          I believe in making technology for social good. Specifically, I am interested in systems that help people navigate other
           systems. Healthcare, bureaucracy, institutions. The places where individuals
           meet structures that do not care about them.
         </p>
 
         <p>
-          Co-founded <Link href="/things/cajal-health">Cajal Health</Link>, where we built AI to help people appeal denied insurance
+          Co-founded <Link href="/things/cajal-health">Cajal Health</Link>, where we build AI to help clinics appeal denied insurance
           claims. Built some iOS apps. Did research in cognitive science (the <Link href="/people/labs/ecl">action
           asymmetry hypothesis</Link>), infrastructure systems (<Link href="/people/labs/gao">digital twin ports</Link>), and economic
           sociology (<Link href="/people/labs/ces">billionaires and institutions</Link>).
