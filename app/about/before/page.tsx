@@ -21,19 +21,13 @@ export default function Before() {
 
 
         <p>
-          Undergrad at Cornell. Studied computer science but spent as much time in the psychology department and the library as in the CS building. The interdisciplinary stuff was always more interesting to me than the pure technical work.
+          Undergrad at Cornell. Studied computer science but spent as much time in the psychology department and the library as in the CS building. 
+          The interdisciplinary stuff was always more interesting to me than theory or pure CS.
         </p>
 
         <p>
-          Research assistant in the <Link href="/people/labs/ecl">Experience and Cognition Lab</Link>, working on the action asymmetry hypothesis. Learned how to design experiments, analyze data, write papers. Learned that research is slower and messier than it looks from the outside.
-        </p>
-
-        <p>
-          Worked in the <Link href="/people/labs/gao">Gao Research Lab</Link> on digital twin infrastructure. Built Unity models for port visualization. Different kind of work. More applied, more concrete, more immediate feedback loops.
-        </p>
-
-        <p>
-          Research assistant at the <Link href="/people/labs/ces">Center for Economy and Society</Link>. Studied billionaires and institutions, the Acemoglu-Robinson hypothesis, why China is a counterexample. Economic sociology taught me to see systems differently, as contingent, as constructed, as changeable.
+          I would like to think that in my nondeterministic past lives I was a professional basketball player (with Lebron James),
+          a writer, or a neurosurgeon.
         </p>
       </div>
     </main>
