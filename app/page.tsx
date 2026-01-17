@@ -1,11 +1,13 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main className="home-container">
-      <h1 className="site-title">stephen chien</h1>
-
-      <div className="tree">
+      <div className="home-layout">
+        <div className="home-content">
+          <h1 className="site-title">stephen chien</h1>
+          <div className="tree">
         <div className="tree-item">
           <Link href="/about">about</Link>
           <span className="desc">who i am</span>
@@ -83,6 +85,15 @@ export default function Home() {
           <Link href="/writings">writings</Link>
           <span className="desc">i also like to write things</span>
         </div>
+          </div>
+        </div>
+        <Image
+          src="/assets/image.png"
+          alt="Stephen Chien"
+          width={180}
+          height={240}
+          className="profile-image"
+        />
       </div>
     </main>
   );
