@@ -26,8 +26,9 @@ export default function Before() {
         </p>
 
         <p>
-          I would like to think that in my nondeterministic past lives I was a professional basketball player (with Lebron James),
-          a writer, or a neurosurgeon.
+          If I didn't pursue software engineering, 
+          I'd be a writer, a surgeon, or a professional basketball player (hopefully with Lebron).
+
         </p>
       </div>
     </main>
