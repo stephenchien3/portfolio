@@ -30,10 +30,10 @@ export default function Home() {
               <Link href="/things/cajal-health">cajal health</Link>
             </div>
             <div className="tree-item">
-              <Link href="/things/gautama">gautama</Link>
+              <Link href="/things/assesskit">assesskit</Link>
             </div>
             <div className="tree-item">
-              <Link href="/things/assesskit">assesskit</Link>
+              <Link href="/things/gautama">gautama</Link>
             </div>
             <div className="tree-item">
               <Link href="/things/morrison">morrison</Link>

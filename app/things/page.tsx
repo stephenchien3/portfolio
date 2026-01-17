@@ -21,12 +21,12 @@ export default function Things() {
           <span className="desc">AI insurance appeals</span>
         </div>
         <div className="tree-item">
-          <Link href="/things/gautama">gautama</Link>
-          <span className="desc">iOS meditation app</span>
-        </div>
-        <div className="tree-item">
           <Link href="/things/assesskit">assesskit</Link>
           <span className="desc">response collection</span>
+        </div>
+        <div className="tree-item">
+          <Link href="/things/gautama">gautama</Link>
+          <span className="desc">iOS meditation app</span>
         </div>
         <div className="tree-item">
           <Link href="/things/morrison">morrison</Link>
