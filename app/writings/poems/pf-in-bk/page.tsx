@@ -36,7 +36,7 @@ people got to go places and
 
 if you're doing more than three sets you gotta go,
 
-and the upstairs floor is too hot because of that
+the upstairs floor is too hot because of that
 
 one dude with his tank top on sweating bullets, and
 
