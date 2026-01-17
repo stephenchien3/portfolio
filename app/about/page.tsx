@@ -21,22 +21,21 @@ export default function About() {
         </p>
 
         <p>
-          I believe in making technology for social good. Specifically, I am interested in systems that help people navigate other
-          systems. Healthcare, bureaucracy, institutions. The places where individuals
-          meet structures that do not care about them.
+          I believe in making technology for social good. Specifically, I am interested in healthcare, 
+          bureaucracy, and institutions; the places where individuals
+          meet structures that don't necessarily care about them, at least in the US.
         </p>
 
         <p>
-          Co-founded <Link href="/things/cajal-health">Cajal Health</Link>, where we build AI to help clinics appeal denied insurance
+          Co-founder of <Link href="/things/cajal-health">Cajal Health</Link>, where we build AI to help clinics appeal denied insurance
           claims. Built some iOS apps. Did research in cognitive science (the <Link href="/people/labs/ecl">action
           asymmetry hypothesis</Link>), infrastructure systems (<Link href="/people/labs/gao">digital twin ports</Link>), and economic
           sociology (<Link href="/people/labs/ces">billionaires and institutions</Link>).
         </p>
 
         <p>
-          I <Link href="/elsewhere/readings">read constantly</Link>. Toni Morrison is my favorite author. Also Kafka for the
-          alienation, Murakami for the dreamscapes, Mo Yan for the history. Philosophy
-          too: Heidegger, Lakoff and Johnson, Kuhn.
+          I <Link href="/elsewhere/readings">read constantly</Link>. Toni Morrison is my favorite author.
+  
         </p>
 
         <p>

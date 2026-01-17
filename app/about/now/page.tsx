@@ -20,8 +20,7 @@ export default function Now() {
       <div className="detail-content">
         <p>
           Finishing my CS Masters at Cornell. Taking classes in machine learning, systems,
-          and whatever else looks interesting. The coursework is fine but the real learning
-          happens outside of class.
+          and whatever else looks interesting. 
         </p>
 
         <p>
@@ -37,8 +36,7 @@ export default function Now() {
 
         <p>
           Trying to spend less time on screens and more time outside. Ithaca makes this
-          easier in fall and harder in winter. The gorges are beautiful when you can get
-          to them.
+          easier in fall and harder in winter.
         </p>
       </div>
     </main>
