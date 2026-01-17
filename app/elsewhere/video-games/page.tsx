@@ -30,7 +30,7 @@ export default function VideoGames() {
         </p>
 
         <p>
-          Unfortunaely, I sort of stopped playing in college to pursue other interests. 
+          Unfortunately, I sort of stopped playing in college to pursue other interests. 
         </p>
 
       </div>
