@@ -75,9 +75,6 @@ export default function Home() {
             <div className="tree-item">
               <Link href="/elsewhere/contact">contact</Link>
             </div>
-            <div className="tree-item">
-              <Link href="/elsewhere/video-games">video games</Link>
-            </div>
           </div>
         </div>
 
