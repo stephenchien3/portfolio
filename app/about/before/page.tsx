@@ -27,7 +27,8 @@ export default function Before() {
 
         <p>
           If I didn't pursue software engineering, 
-          I'd be a writer, a surgeon, or a professional basketball player (hopefully with Lebron).
+          I'd be a writer, a surgeon, or a professional basketball player 
+          (hopefully playing with Lebron).
 
         </p>
       </div>
