@@ -26,7 +26,7 @@ its a collection of people who you'd never interact with
 
 except on a last name basis, but are weirdly connected
 
-hasidic jews on the smith machine and teenagers doing pull-ups
+hasidic jews on the smith machine and angsty teenagers doing pull-ups
 
 and treadmill-walking asian grandmas where
 
