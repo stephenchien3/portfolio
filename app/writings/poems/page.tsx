@@ -17,35 +17,13 @@ export default function Poems() {
       <h1 className="page-title">poems</h1>
       <p className="page-desc">a collection of poems</p>
 
-      <div className="detail-content" style={{ lineHeight: '1.8' }}>
-        <h2>egrets and egress</h2>
-        <p style={{ whiteSpace: 'pre-line' }}>
-{`i, too, wonder of
-thursday morning unemployment
-& surrogate individualistic activities
-
-judgment is key here
-
-sitting in a fluorescent light makes
-the days more feudal
-
-hegemonic processes`}
-        </p>
-
-        <h2>bay bensonhurst</h2>
-        <p style={{ whiteSpace: 'pre-line' }}>
-{`ephemeral lines
-
-languid georgian, cantonese, vietnamese
-
-socks over long concrete tallow
-
-lox, latkes, long an
-
-can't remember the last time
-
-nor the first time`}
-        </p>
+      <div className="tree">
+        <div className="tree-item">
+          <Link href="/writings/poems/egrets-and-egress">egrets and egress</Link>
+        </div>
+        <div className="tree-item">
+          <Link href="/writings/poems/bay-bensonhurst">bay bensonhurst</Link>
+        </div>
       </div>
     </main>
   );
