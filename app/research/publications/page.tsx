@@ -25,6 +25,18 @@ export default function Publications() {
 
       <div className="tree" style={{ marginTop: '1.5rem' }}>
         <div className="tree-item">
+          <span>An Online Test of the Sword and Shield Hypothesis</span>
+          <div className="detail-content" style={{ marginTop: '0.5rem', marginLeft: '0' }}>
+            <p style={{ fontSize: '0.9em', color: '#aaa' }}>
+              Kira Pawletko, Owen Morgan, Stephen Chien, Daniel Casasanto
+            </p>
+            <p style={{ fontSize: '0.9em', color: '#aaa' }}>
+              APA 2026, August 2026 (forthcoming)
+            </p>
+          </div>
+        </div>
+
+        <div className="tree-item">
           <span>Exposing Privacy Vulnerabilities in mmWave Sensing via Membership Inference Attacks</span>
           <div className="detail-content" style={{ marginTop: '0.5rem', marginLeft: '0' }}>
             <p style={{ fontSize: '0.9em', color: '#aaa' }}>
