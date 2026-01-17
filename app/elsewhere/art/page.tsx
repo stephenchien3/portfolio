@@ -129,6 +129,27 @@ export default function Art() {
             </p>
           </div>
         </div>
+
+        <div className="art-item">
+          <a href="https://www.rubellfamilycollection.com/artist/amoako-boafo/" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/assets/image.png"
+              alt="Amoako Boafo"
+              width={300}
+              height={400}
+              style={{ width: '100%', height: 'auto' }}
+            />
+          </a>
+          <div className="art-info">
+            <a href="https://www.rubellfamilycollection.com/artist/amoako-boafo/" target="_blank" rel="noopener noreferrer">
+              <strong>amoako boafo</strong>
+            </a>
+            <span className="desc">portrait</span>
+            <p>
+              portrait of a portrait 
+            </p>
+          </div>
+        </div>
       </div>
     </main>
   );
