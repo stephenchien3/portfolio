@@ -34,7 +34,7 @@ it is a 'judgement free' zone but
 
 people got to go places and
 
-if you're doing more than three sets you gotta go,
+if you're doing more than three sets you gotta go
 
 the upstairs floor is too hot because of that
 
