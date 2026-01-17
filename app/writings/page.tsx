@@ -17,13 +17,10 @@ export default function Writings() {
 
       <div className="tree">
         <div className="tree-item">
-          <Link href="/writings/brief-story">a brief story</Link>
+          <Link href="/writings/poems">poems</Link>
         </div>
         <div className="tree-item">
-          <Link href="/writings/russia">russia</Link>
-        </div>
-        <div className="tree-item">
-          <Link href="/writings/the-hike">the hike</Link>
+          <Link href="/writings/short-stories">short stories [unfinished]</Link>
         </div>
       </div>
     </main>
