@@ -18,9 +18,6 @@ export default function Poems() {
       <p className="page-desc">a collection of poems</p>
 
       <div className="tree">
-        <div className="tree-item">
-          <Link href="/writings/poems/pf-in-bk">PF IN BK ON THR</Link>
-        </div>
       </div>
     </main>
   );
