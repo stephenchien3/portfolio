@@ -14,8 +14,8 @@ export default function ShortStories() {
 
       <BackButton />
 
-      <h1 className="page-title">short stories [unfinished]</h1>
-      <p className="page-desc">works in progress</p>
+      <h1 className="page-title">short stories</h1>
+      <p className="page-desc">in progress</p>
 
       <div className="tree">
         <div className="tree-item">
