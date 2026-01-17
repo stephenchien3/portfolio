@@ -39,9 +39,7 @@ export default function Art() {
             </a>
             <span className="desc">knife behind back, 2000</span>
             <p>
-              Reminds me of something childlike. Big eyes, round face, cartoon proportions.
-              But there is a knife behind her back. Innocence with an edge. The tension
-              between cute and menacing.
+              This reminds me of childlike defiance, being individualistic, and not following a linear path. 
             </p>
           </div>
         </div>
@@ -62,9 +60,7 @@ export default function Art() {
             </a>
             <span className="desc">the parasol, 1777</span>
             <p>
-              Early Goya, before the black paintings, before the horrors of war. Light
-              and playful. A young man holds a parasol over a woman. The colors are warm.
-              People contain multitudes.
+              Early Goya, before the black paintings. I saw this in Spain and just really liked it, the warmness of it. 
             </p>
           </div>
         </div>
@@ -85,9 +81,8 @@ export default function Art() {
             </a>
             <span className="desc">sunflower seeds, 2010</span>
             <p>
-              One hundred million hand-painted porcelain sunflower seeds, spread across
-              the floor of the Tate Modern. Each one made by hand in Jingdezhen. Mass
-              production and individual craftsmanship. The weight of labor.
+              One hundred million hand-painted porcelain sunflower seeds.
+
             </p>
           </div>
         </div>
@@ -108,9 +103,7 @@ export default function Art() {
             </a>
             <span className="desc">pyramidal neurons, 1904</span>
             <p>
-              Not traditionally art but I think it counts. Cajal drew what he saw through
-              the microscope with the precision of a scientist and the eye of an artist.
-              They look like trees, like rivers, like lightning.
+              Imagine drawing this from a microscope. 
             </p>
           </div>
         </div>
@@ -131,9 +124,8 @@ export default function Art() {
             </a>
             <span className="desc">the course of empire</span>
             <p>
-              Five paintings showing the rise and fall of a civilization. Savage state,
-              pastoral state, consummation, destruction, desolation. The same landscape
-              across centuries. Empires rise and fall but the mountain remains.
+              The rise and fall of a civilization. Savage state,
+              pastoral state, consummation, destruction, desolation.
             </p>
           </div>
         </div>
