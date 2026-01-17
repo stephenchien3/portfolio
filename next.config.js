@@ -8,6 +8,30 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/people',
+        destination: '/research',
+        permanent: true,
+      },
+      {
+        source: '/people/labs',
+        destination: '/research/labs',
+        permanent: true,
+      },
+      {
+        source: '/people/labs/:path*',
+        destination: '/research/labs/:path*',
+        permanent: true,
+      },
+      {
+        source: '/people/teachers',
+        destination: '/research/teachers',
+        permanent: true,
+      },
+    ];
+  },
 }
 
 module.exports = nextConfig
