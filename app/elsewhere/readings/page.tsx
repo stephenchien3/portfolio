@@ -18,7 +18,7 @@ export default function Readings() {
       <p className="page-desc">things i have read</p>
 
       <p>
-        I read a lot. Always have. Books are how I make sense of things.
+        I read a lot. Always have. Here is a short list of my favorite authors, and corresponding books.
       </p>
 
       <h3 style={{ marginTop: '1.5rem' }}>fiction</h3>
@@ -28,12 +28,10 @@ export default function Readings() {
           <span className="desc">beloved, sula, the bluest eye, tar baby, song of solomon</span>
           <div className="detail-content" style={{ marginTop: '0.5rem', marginLeft: '0' }}>
             <p style={{ fontSize: '0.9em', color: '#aaa' }}>
-              I read all of her books. She is my favorite author. The way she writes is
-              direct, no wasted words, but you can tell she puts meaning behind every single
-              one. Her sentences have weight. She writes about trauma and history and love
-              and violence in ways that feel true, that do not flinch. Beloved broke something
-              in me. Sula made me think about friendship differently. The Bluest Eye is
-              devastating in its clarity.
+              Toni Morrison is my favorite author. Her sentences have weight. She writes about trauma and history and love
+              and violence in ways that feel true. I distinctly remember finishing Beloved, and just sitting down,
+              wondering what I just read, and how someone could even write like that. But don't start with Beloved like I did.
+              Start with an easier book like Sula, or her first novel, The Bluest Eye.  
             </p>
           </div>
         </div>
@@ -43,10 +41,7 @@ export default function Readings() {
           <div className="detail-content" style={{ marginTop: '0.5rem', marginLeft: '0' }}>
             <p style={{ fontSize: '0.9em', color: '#aaa' }}>
               Kafka explores the unknown, the bureaucratic nightmare, the alienation, the
-              absurdity of existence. His characters wake up transformed into insects or
-              arrested for crimes no one will name. It should feel surreal but it does not.
-              It feels like the most accurate description of modern life ever written.
-              The horror is in the mundanity.
+              absurdity of existence. It feels like the most accurate description of modern life ever written.
             </p>
           </div>
         </div>
@@ -55,11 +50,10 @@ export default function Readings() {
           <span className="desc">kafka on the shore, norwegian wood, wind-up bird chronicle</span>
           <div className="detail-content" style={{ marginTop: '0.5rem', marginLeft: '0' }}>
             <p style={{ fontSize: '0.9em', color: '#aaa' }}>
-              Murakami is misogynistic. His female characters often exist to serve
-              the male protagonist's emotional journey. But he has a beautiful way of
-              describing landscapes and different worlds. The surreal bleeding into the
-              mundane. Cats that talk, wells that lead to other dimensions, jazz playing
-              in empty bars. His books feel like dreams you cannot quite remember.
+              Again, I keep on going back to the magical realism genre. Murakami is really good at 
+              perspectives and time, almost similar to Paprika by Satoshi Kon or Inception. 
+              Cats that talk? What else could you want in a story?
+              [besides the fact that he cannot write about women].
             </p>
           </div>
         </div>
@@ -68,9 +62,7 @@ export default function Readings() {
           <span className="desc">red sorghum</span>
           <div className="detail-content" style={{ marginTop: '0.5rem', marginLeft: '0' }}>
             <p style={{ fontSize: '0.9em', color: '#aaa' }}>
-              Brutal and beautiful. China's rural history told through blood and soil
-              and sorghum wine. The violence is not gratuitous, it is the violence of
-              history, of survival, of people living through impossible times.
+              Don't read this book, it's terrible.
             </p>
           </div>
         </div>
