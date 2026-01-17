@@ -142,11 +142,11 @@ export default function Art() {
           </a>
           <div className="art-info">
             <a href="https://www.rubellfamilycollection.com/artist/amoako-boafo/" target="_blank" rel="noopener noreferrer">
-              <strong>amoako boafo</strong>
+              <strong>stephen chien</strong>
             </a>
             <span className="desc">portrait</span>
             <p>
-              portrait of a portrait 
+              portrait of a portrait. i believe the original artist is amaoko boafo, but i could be wrong.
             </p>
           </div>
         </div>
