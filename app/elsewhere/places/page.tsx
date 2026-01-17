@@ -40,16 +40,18 @@ export default function Places() {
         <div className="tree-item">
           <span>manhattan</span>
           <span className="desc">upper west side, where i currently reside</span>
+              <div className="detail-content" style={{ marginTop: '0.5rem', marginLeft: '0' }}>
+            <p style={{ fontSize: '0.9em', color: '#aaa' }}>
+              I like the city. 
+            </p>
+          </div>
         </div>
         <div className="tree-item">
           <span>ithaca, ny</span>
           <span className="desc">college</span>
           <div className="detail-content" style={{ marginTop: '0.5rem', marginLeft: '0' }}>
             <p style={{ fontSize: '0.9em', color: '#aaa' }}>
-              Cornell sits on a hill above Cayuga Lake. The campus is beautiful in a way
-              that feels earned, gorges cutting through the landscape, bridges spanning
-              ravines, waterfalls you can walk to between classes. The winters are gray
-              and long. The town is small, built around the university.
+              solid place. 
             </p>
           </div>
         </div>
@@ -58,8 +60,7 @@ export default function Places() {
           <span className="desc">summer running</span>
           <div className="detail-content" style={{ marginTop: '0.5rem', marginLeft: '0' }}>
             <p style={{ fontSize: '0.9em', color: '#aaa' }}>
-              Spent a summer here. Ran six miles every day, got my best ranking on Strava.
-              Then ran fourteen miles on the Monon Trail. David Goggins energy.
+              Spent a summer here. Ran six miles every day.
             </p>
           </div>
         </div>
@@ -71,10 +72,6 @@ export default function Places() {
               Newark was not nice. I just stayed inside.
             </p>
           </div>
-        </div>
-        <div className="tree-item">
-          <span>chicago</span>
-          <span className="desc">IEEE MASS 2025</span>
         </div>
       </div>
     </main>
