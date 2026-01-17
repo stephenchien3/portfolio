@@ -20,7 +20,7 @@ export default function PfInBk() {
 
       <div className="detail-content" style={{ lineHeight: '1.8' }}>
         <p style={{ whiteSpace: 'pre-line' }}>
-{`I love Planet Fitness in Brooklyn,
+{`i love planet fitness in brooklyn,
 
 its a collection of people who you'd never interact with
 
@@ -28,7 +28,7 @@ except on a last name basis, but are weirdly connected
 
 hasidic jews on the smith machine and angsty teenagers doing pull-ups
 
-and treadmill-walking asian grandmas where
+and treadmill-walking asian grandmas 
 
 it is a 'judgement free' zone but
 
@@ -38,13 +38,13 @@ if you're doing more than three sets you gotta go
 
 the upstairs floor is too hot because of that
 
-one dude with his tank top on sweating bullets, and
+one dude with his tank top on sweating bullets
 
-ofc the tv only plays that one channel that advertises a murder in the bronx,
+the tv plays that one channel that advertises a murder in the bronx,
 
 and who would want to see that when they are working out?
 
-Then you start to wonder why everyone is here and
+then you start to wonder why everyone is here and
 
 who the fuck works out on a thursday at eleven am
 

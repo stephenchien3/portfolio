@@ -19,23 +19,20 @@ export default function Assesskit() {
 
       <div className="detail-content">
         <p>
-          Fully built this one. Surveys are blunt instruments. You ask a question, you get
-          an answer, but you lose all the texture. How long did someone think before responding?
-          Did they change their mind? What did they almost say?
+          Surveys are blunt instruments. You ask a question, you get
+          an answer, but you lose all stuff in between. How long did someone think before responding?
+          Did they change their mind?
         </p>
 
         <p>
-          Assesskit is a tool for collecting granular user responses. Built for researchers
-          and product teams who need more than checkboxes and Likert scales. The platform
-          captures the full shape of a response: timing, revisions, confidence levels,
-          branching paths.
+          Assesskit is a tool for collecting granular user responses. It tracks more detailed information, 
+          such as reaction time, and gives you options for counterbranching, repeating questions, 
+          as well as follow-up questions based on what someone answered. 
         </p>
 
         <p>
-          I designed the response collection architecture and built the frontend interface
-          for creating custom assessment flows. The challenge was making something flexible
-          enough to handle complex research protocols while staying simple enough that
-          non-technical users could build their own assessments.
+          I originally intended this to be built for my psychology lab, but it morphed into 
+          a more general purpose response tracker. 
         </p>
 
         <a

@@ -19,10 +19,7 @@ export default function Research() {
 
       <div className="detail-content">
         <p>
-          Academic research moves slowly. You spend months on a project, write it up,
-          submit it, wait for reviews, revise, resubmit, wait again. The gap between
-          doing the work and seeing it published can be years. But the thinking stays
-          with you.
+          Research is both a joy and a pain. 
         </p>
       </div>
 
@@ -37,10 +34,10 @@ export default function Research() {
               IEEE MASS 2025, Chicago
             </p>
             <p style={{ fontSize: '0.9em', color: '#aaa', marginTop: '0.5rem' }}>
-              Millimeter-wave sensing is everywhere now. Gesture recognition, health monitoring,
-              presence detection. But these systems leak information. We showed that membership
+              Millimeter-wave sensing is a more niche form of radar, and it's used in gesture recognition, health monitoring, and 
+              presence detection [such as those pesky TSA monitors at the airport]. But these systems leak information. We showed that membership
               inference attacks can determine whether a specific person was in the training
-              data, raising serious privacy concerns for deployed mmWave systems.
+              data, raising serious privacy concerns for certain mmWave systems.
             </p>
             <p style={{ fontSize: '0.9em', color: '#aaa', marginTop: '0.5rem' }}>
               *Co-first authors

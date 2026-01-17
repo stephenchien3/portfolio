@@ -13,7 +13,9 @@ export default function Writings() {
       <BackButton />
 
       <h1 className="page-title">writings</h1>
-      <p className="page-desc">i also like to write things</p>
+      <p className="page-desc">i also like to write things. most of these works were written sporadically over an afternoon,
+        or two. 
+      </p>
 
       <div className="tree">
         <div className="tree-item">

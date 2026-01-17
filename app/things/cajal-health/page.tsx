@@ -35,8 +35,8 @@ export default function CajalHealth() {
           We built AI call and email agents tailored to smaller specialized healthcare
           clinics and their specific billing codes. We have technical experience with EMR
           systems, which lets us integrate directly into existing workflows. While our
-          primary focus is helping clinics recover revenue, we help individual patients
-          as well.
+          primary focus is helping clinics recover revenue, we directly benefit individual patients
+          who otherwise would get their insurance claim denied.
         </p>
 
         <h3>what i did</h3>
@@ -56,7 +56,7 @@ export default function CajalHealth() {
           </div>
           <div className="tree-item">
             <span>prototyping</span>
-            <span className="desc">built early versions, tested ideas, threw away what did not work</span>
+            <span className="desc">built early versions</span>
           </div>
           <div className="tree-item">
             <span>planning</span>
@@ -66,10 +66,7 @@ export default function CajalHealth() {
 
         <p style={{ marginTop: '1.5rem' }}>
           Named after Santiago Ramon y Cajal, the Spanish neuroscientist who first mapped
-          the structure of the nervous system. He drew neurons by hand, thousands of them,
-          with a level of detail that still holds up today. There is something about that
-          combination of art and science, patience and precision, that felt right for what
-          we were trying to do.
+          the structure of the nervous system. He drew neurons by hand.
         </p>
 
         <a
