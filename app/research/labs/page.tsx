@@ -7,7 +7,7 @@ export default function Labs() {
       <div className="breadcrumb">
         <Link href="/">~</Link>
         <span>/</span>
-        <Link href="/research">people</Link>
+        <Link href="/research">research</Link>
         <span>/</span>
         <span>labs</span>
       </div>
@@ -19,9 +19,9 @@ export default function Labs() {
 
       <div className="tree">
         <div className="tree-item">
-          <a href="https://casasanto.com" target="_blank" rel="noopener noreferrer">
+          <Link href="/research/labs/ecl">
             experience and cognition lab
-          </a>
+          </Link>
           <span className="desc">embodied cognition</span>
           <div className="tree">
             <div className="tree-item">
