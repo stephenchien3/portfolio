@@ -19,16 +19,16 @@ export default function Labs() {
 
       <div className="tree">
         <div className="tree-item">
-          <Link href="/research/labs/ecl">
+          <a href="https://casasanto.com" target="_blank" rel="noopener noreferrer">
             experience and cognition lab
-          </Link>
+          </a>
           <span className="desc">embodied cognition</span>
           <div className="tree">
             <div className="tree-item">
-              <Link href="/research/labs/ecl">action asymmetry hypothesis</Link>
+              <Link href="/research/labs/ecl/action-asymmetry">action asymmetry hypothesis</Link>
             </div>
             <div className="tree-item">
-              <Link href="/research/labs/ecl">sword and shield hypothesis</Link>
+              <Link href="/research/labs/ecl/sword-and-shield">sword and shield hypothesis</Link>
             </div>
           </div>
         </div>
