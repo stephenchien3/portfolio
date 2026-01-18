@@ -19,6 +19,9 @@ export default function Poems() {
 
       <div className="tree">
         <div className="tree-item">
+          <Link href="/writings/poems/a-slice">a slice</Link>
+        </div>
+        <div className="tree-item">
           <Link href="/writings/poems/egrets-and-egress">egrets and egress</Link>
         </div>
         <div className="tree-item">
