@@ -44,6 +44,10 @@ export default function CajalHealth() {
           the structure of the nervous system. He drew neurons by hand.
         </p>
 
+        <p>
+          Accepted to YC (W26).
+        </p>
+
         <a
           href="https://cajalhealth.org"
           target="_blank"
