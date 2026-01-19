@@ -49,6 +49,7 @@ body:has(.home-container) {
 .site-title {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 /* Tree structure */
