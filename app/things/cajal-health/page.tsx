@@ -39,32 +39,7 @@ export default function CajalHealth() {
           who otherwise would get their insurance claim denied.
         </p>
 
-        <h3>what i did</h3>
-
-        <div className="tree">
-          <div className="tree-item">
-            <span>denials</span>
-            <span className="desc">worked on the core denial processing system</span>
-          </div>
-          <div className="tree-item">
-            <span>UI/UX</span>
-            <span className="desc">designed the interface, made it usable for clinics</span>
-          </div>
-          <div className="tree-item">
-            <span>clinic onboarding</span>
-            <span className="desc">brought clinics onto the platform, understood their workflows</span>
-          </div>
-          <div className="tree-item">
-            <span>prototyping</span>
-            <span className="desc">built early versions</span>
-          </div>
-          <div className="tree-item">
-            <span>planning</span>
-            <span className="desc">strategy, roadmap, figuring out what to build next</span>
-          </div>
-        </div>
-
-        <p style={{ marginTop: '1.5rem' }}>
+        <p>
           Named after Santiago Ramon y Cajal, the Spanish neuroscientist who first mapped
           the structure of the nervous system. He drew neurons by hand.
         </p>
