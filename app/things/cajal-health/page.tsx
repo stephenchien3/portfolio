@@ -45,7 +45,7 @@ export default function CajalHealth() {
         </p>
 
         <p>
-          Accepted to YC (W26).
+          Accepted to YC.
         </p>
 
         <a
