@@ -53,22 +53,24 @@ body {
 .tick {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 0 14px;
+  gap: 10px;
+  padding: 0 32px;
   border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 .tick .sym {
-  color: rgba(230, 230, 230, 0.95);
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
 }
 .tick .px {
-  color: rgba(230, 230, 230, 0.85);
+  opacity: 0.9;
 }
-.tick.up .chg {
+.tick .chg {
+  opacity: 0.95;
+}
+.tick.up {
   color: #4ade80;
 }
-.tick.down .chg {
+.tick.down {
   color: #f87171;
 }
 .ticker-row {
