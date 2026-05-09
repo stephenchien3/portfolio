@@ -36,15 +36,15 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 .marquee-left {
-  top: 0;
-  bottom: 0;
+  top: 22px;
+  bottom: 22px;
   left: 0;
   width: 22px;
   border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 .marquee-right {
-  top: 0;
-  bottom: 0;
+  top: 22px;
+  bottom: 22px;
   right: 0;
   width: 22px;
   border-left: 1px solid rgba(255, 255, 255, 0.08);
