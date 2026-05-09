@@ -78,6 +78,27 @@ body {
   align-items: center;
 }
 
+/* Vertical orientation: text reads top-to-bottom */
+.marquee-track-y .ticker-row {
+  display: inline;
+}
+.marquee-track-y .tick {
+  display: inline;
+  gap: 0;
+  padding: 32px 0;
+  border-right: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.marquee-track-y .tick > span {
+  display: inline;
+}
+.marquee-track-y .tick .sym {
+  margin-inline-end: 8px;
+}
+.marquee-track-y .tick .px {
+  margin-inline-end: 8px;
+}
+
 .marquee-track {
   display: inline-flex;
   will-change: transform;
