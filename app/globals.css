@@ -80,6 +80,11 @@ body {
 
 .marquee-track {
   display: inline-flex;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .marquee-track > span {
   display: inline-block;
@@ -87,10 +92,10 @@ body {
 }
 
 .marquee-track-x {
-  animation: marquee-x 60s linear infinite;
+  animation: marquee-x 240s linear infinite;
 }
 .marquee-track-x-reverse {
-  animation: marquee-x 60s linear infinite reverse;
+  animation: marquee-x 240s linear infinite reverse;
 }
 
 .marquee-track-y {
@@ -99,10 +104,10 @@ body {
   height: max-content;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  animation: marquee-y 70s linear infinite;
+  animation: marquee-y 320s linear infinite;
 }
 .marquee-track-y-reverse {
-  animation: marquee-y 70s linear infinite reverse;
+  animation: marquee-y 320s linear infinite reverse;
 }
 
 .marquee-track-y > span {
@@ -111,19 +116,19 @@ body {
 
 @keyframes marquee-x {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
 @keyframes marquee-y {
   from {
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translateY(-50%);
+    transform: translate3d(0, -50%, 0);
   }
 }
 
