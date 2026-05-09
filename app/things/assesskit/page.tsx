@@ -7,8 +7,6 @@ export default function Assesskit() {
       <div className="breadcrumb">
         <Link href="/">~</Link>
         <span>/</span>
-        <Link href="/things">things</Link>
-        <span>/</span>
         <span>assesskit</span>
       </div>
 

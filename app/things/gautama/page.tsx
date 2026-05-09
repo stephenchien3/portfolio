@@ -7,8 +7,6 @@ export default function Gautama() {
       <div className="breadcrumb">
         <Link href="/">~</Link>
         <span>/</span>
-        <Link href="/things">things</Link>
-        <span>/</span>
         <span>gautama</span>
       </div>
 

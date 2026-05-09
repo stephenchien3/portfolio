@@ -19,8 +19,14 @@ export default function Home() {
         </div>
 
         <div className="tree-item">
-          <Link href="/things">things</Link>
-          <span className="desc">cajal health, assesskit, gautama</span>
+          <span>things</span>
+          <span className="desc">
+            <a href="https://cajalhealth.org" target="_blank" rel="noopener noreferrer">cajal health</a>
+            {', '}
+            <Link href="/things/assesskit">assesskit</Link>
+            {', '}
+            <Link href="/things/gautama">gautama</Link>
+          </span>
         </div>
 
         <div className="tree-item">
