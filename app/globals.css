@@ -7,7 +7,7 @@ body {
 }
 
 .home-container {
-  max-width: 750px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
   height: 100vh;
@@ -18,26 +18,31 @@ body {
   justify-content: center;
 }
 
-.home-container .tree-item {
-  margin-bottom: 0.4rem;
-}
-
-.home-container .tree .tree {
-  margin-top: 0.2rem;
-}
-
 body:has(.home-container) {
   overflow: hidden;
 }
 
 .home-layout {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
+  justify-content: center;
 }
 
 .home-content {
-  flex: 1;
+  flex: 0 1 auto;
+}
+
+.home-container .tree-item {
+  margin-bottom: 0.9rem;
+}
+
+.home-container .tree .tree {
+  margin-top: 0.6rem;
+}
+
+.home-container .tree .tree .tree-item {
+  margin-bottom: 0.5rem;
 }
 
 .profile-image {
@@ -48,8 +53,8 @@ body:has(.home-container) {
 
 .site-title {
   font-size: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
+  margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 /* Tree structure */

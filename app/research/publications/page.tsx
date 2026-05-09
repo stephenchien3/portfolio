@@ -17,12 +17,6 @@ export default function Publications() {
       <h1 className="page-title">publications</h1>
       <p className="page-desc">papers</p>
 
-      <div className="detail-content">
-        <p>
-          Research is both a joy and a pain.
-        </p>
-      </div>
-
       <div className="tree" style={{ marginTop: '1.5rem' }}>
         <div className="tree-item">
           <span>An Online Test of the Sword and Shield Hypothesis</span>
