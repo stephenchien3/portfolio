@@ -25,7 +25,7 @@ export default function Home() {
             {', '}
             <a href="https://assesskit.com" target="_blank" rel="noopener noreferrer">assesskit</a>
             {', '}
-            <Link href="/things/gautama">gautama</Link>
+            <a href="https://apps.apple.com/us/app/buddhist-app-gautama/id6753130717" target="_blank" rel="noopener noreferrer">gautama</a>
           </span>
         </div>
 

@@ -7,7 +7,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/about",
     "/about/now",
-    "/things/gautama",
     "/research/labs",
     "/research/labs/ecl",
     "/research/labs/ecl/action-asymmetry",
