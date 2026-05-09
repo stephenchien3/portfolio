@@ -46,6 +46,17 @@ export default function Home() {
           <Link href="/writings">writings</Link>
           <span className="desc">i also like to write things</span>
         </div>
+
+        <div className="tree-item">
+          <span>links</span>
+          <span className="desc">
+            <a href="https://github.com/stephenchien3" target="_blank" rel="noopener noreferrer">github</a>
+            {', '}
+            <a href="https://linkedin.com/in/stephenlchien" target="_blank" rel="noopener noreferrer">linkedin</a>
+            {', '}
+            <a href="mailto:slc292@cornell.edu">email</a>
+          </span>
+        </div>
           </div>
         </div>
         <Image
