@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </div>
         <Image
-          src="/assets/image.png"
+          src="/assets/portrait.png"
           alt="Stephen Chien"
           width={180}
           height={240}
