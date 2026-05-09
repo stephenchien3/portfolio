@@ -10,37 +10,25 @@ export default function Home() {
           <div className="tree">
         <div className="tree-item">
           <Link href="/about">about</Link>
-          <span className="desc">who i am</span>
+          <span className="desc">cs @ cornell</span>
           <div className="tree">
             <div className="tree-item">
               <Link href="/about/now">now</Link>
-            </div>
-            <div className="tree-item">
-              <Link href="/about/before">before</Link>
-            </div>
-            <div className="tree-item">
-              <Link href="/about/interests">interests</Link>
             </div>
           </div>
         </div>
 
         <div className="tree-item">
           <Link href="/things">things</Link>
-          <span className="desc">what i have made</span>
-          <div className="tree">
-            <div className="tree-item">
-              <Link href="/things/cajal-health">cajal health</Link>
-            </div>
-            <div className="tree-item">
-              <Link href="/things/assesskit">assesskit</Link>
-            </div>
-            <div className="tree-item">
-              <Link href="/things/gautama">gautama</Link>
-            </div>
-            <div className="tree-item">
-              <Link href="/things/morrison">morrison</Link>
-            </div>
-          </div>
+          <span className="desc">
+            <Link href="/things/cajal-health">cajal health</Link>
+            {', '}
+            <Link href="/things/assesskit">assesskit</Link>
+            {', '}
+            <Link href="/things/gautama">gautama</Link>
+            {', '}
+            <Link href="/things/morrison">morrison</Link>
+          </span>
         </div>
 
         <div className="tree-item">
@@ -49,31 +37,16 @@ export default function Home() {
           <div className="tree">
             <div className="tree-item">
               <Link href="/research/labs">labs</Link>
+              <span className="desc">
+                <a href="https://casasanto.com" target="_blank" rel="noopener noreferrer">ecl</a>
+                {', '}
+                <a href="https://gao.cee.cornell.edu" target="_blank" rel="noopener noreferrer">gao</a>
+                {', '}
+                <a href="https://www.economyandsociety.org" target="_blank" rel="noopener noreferrer">ces</a>
+              </span>
             </div>
             <div className="tree-item">
               <Link href="/research/publications">publications</Link>
-            </div>
-            <div className="tree-item">
-              <Link href="/research/teachers">teachers</Link>
-            </div>
-          </div>
-        </div>
-
-        <div className="tree-item">
-          <Link href="/elsewhere">elsewhere</Link>
-          <span className="desc">other things</span>
-          <div className="tree">
-            <div className="tree-item">
-              <Link href="/elsewhere/places">places</Link>
-            </div>
-            <div className="tree-item">
-              <Link href="/elsewhere/readings">readings</Link>
-            </div>
-            <div className="tree-item">
-              <Link href="/elsewhere/art">art</Link>
-            </div>
-            <div className="tree-item">
-              <Link href="/elsewhere/contact">contact</Link>
             </div>
           </div>
         </div>
@@ -85,7 +58,7 @@ export default function Home() {
           </div>
         </div>
         <Image
-          src="/assets/IMG_1419.PNG"
+          src="/assets/image.png"
           alt="Stephen Chien"
           width={180}
           height={240}
