@@ -1,10 +1,4 @@
-import {
-  fetchQuotes,
-  INDEX_SPECS,
-  STOCK_SPECS,
-  MIXED_SPECS,
-  type Tick,
-} from '../lib/quotes';
+import { fetchAllQuotes, type Tick } from '../lib/quotes';
 
 function formatPrice(n: number) {
   if (n >= 10000)
@@ -45,16 +39,16 @@ function Ticker({ ticks, repeats = 3 }: { ticks: Tick[]; repeats?: number }) {
 }
 
 export default async function BorderMarquee() {
-  const [indices, stocks, mixed] = await Promise.all([
-    fetchQuotes(INDEX_SPECS),
-    fetchQuotes(STOCK_SPECS),
-    fetchQuotes(MIXED_SPECS),
-  ]);
+  const { indices, stocks, mixed } = await fetchAllQuotes();
 
   const top = indices.length ? indices : stocks;
-  const bottom = stocks;
+  const bottom = stocks.length ? stocks : indices;
   const left = mixed.length ? mixed : indices;
-  const right = stocks;
+  const right = stocks.length ? stocks : indices;
+
+  if (!top.length && !bottom.length && !left.length && !right.length) {
+    return null;
+  }
 
   return (
     <div
