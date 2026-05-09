@@ -9,12 +9,12 @@ body {
 .marquee {
   position: fixed;
   overflow: hidden;
-  font-family: monospace;
+  font-family: 'Courier New', ui-monospace, monospace;
   font-size: 11px;
-  letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.45);
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(2px);
+  letter-spacing: 0.02em;
+  color: rgba(230, 230, 230, 0.85);
+  background: #0a0a0a;
+  border-color: rgba(255, 255, 255, 0.08);
   user-select: none;
   white-space: nowrap;
 }
@@ -23,27 +23,57 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 18px;
-  line-height: 18px;
+  height: 22px;
+  line-height: 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 .marquee-bottom {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 18px;
-  line-height: 18px;
+  height: 22px;
+  line-height: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 .marquee-left {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 18px;
+  width: 22px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 .marquee-right {
   top: 0;
   bottom: 0;
   right: 0;
-  width: 18px;
+  width: 22px;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tick {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 14px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+.tick .sym {
+  color: rgba(230, 230, 230, 0.95);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.tick .px {
+  color: rgba(230, 230, 230, 0.85);
+}
+.tick.up .chg {
+  color: #4ade80;
+}
+.tick.down .chg {
+  color: #f87171;
+}
+.ticker-row {
+  display: inline-flex;
+  align-items: center;
 }
 
 .marquee-track {
