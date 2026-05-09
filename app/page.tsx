@@ -23,15 +23,14 @@ export default function Home() {
           <span className="desc">
             <a href="https://cajalhealth.org" target="_blank" rel="noopener noreferrer">cajal health</a>
             {', '}
-            <Link href="/things/assesskit">assesskit</Link>
+            <a href="https://assesskit.com" target="_blank" rel="noopener noreferrer">assesskit</a>
             {', '}
             <Link href="/things/gautama">gautama</Link>
           </span>
         </div>
 
         <div className="tree-item">
-          <Link href="/research">research</Link>
-          <span className="desc">academic work</span>
+          <span>research</span>
           <div className="tree">
             <div className="tree-item">
               <Link href="/research/labs">labs</Link>

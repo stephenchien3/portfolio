@@ -7,8 +7,6 @@ export default function Labs() {
       <div className="breadcrumb">
         <Link href="/">~</Link>
         <span>/</span>
-        <Link href="/research">research</Link>
-        <span>/</span>
         <span>labs</span>
       </div>
 

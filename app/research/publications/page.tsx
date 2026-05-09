@@ -7,8 +7,6 @@ export default function Publications() {
       <div className="breadcrumb">
         <Link href="/">~</Link>
         <span>/</span>
-        <Link href="/research">research</Link>
-        <span>/</span>
         <span>publications</span>
       </div>
 

@@ -7,8 +7,6 @@ export default function ECL() {
       <div className="breadcrumb">
         <Link href="/">~</Link>
         <span>/</span>
-        <Link href="/research">people</Link>
-        <span>/</span>
         <Link href="/research/labs">labs</Link>
         <span>/</span>
         <span>ecl</span>
