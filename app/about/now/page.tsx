@@ -19,7 +19,7 @@ export default function Now() {
 
       <div className="detail-content">
         <p>
-          Finishing masters at Cornell, working on <Link href="/things/cajal-health">cajal health</Link>.
+          Finishing masters at Cornell, working on <a href="https://cajalhealth.org" target="_blank" rel="noopener noreferrer">cajal health</a>.
         </p>
       </div>
     </main>

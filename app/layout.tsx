@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import CursorTrail from "./components/DuckCursor";
 
 export const metadata: Metadata = {
   title: {
@@ -71,7 +72,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="latex-dark">{children}</body>
+      <body className="latex-dark">
+        {children}
+        <CursorTrail />
+      </body>
     </html>
   );
 }

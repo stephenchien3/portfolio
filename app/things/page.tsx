@@ -15,9 +15,9 @@ export default function Things() {
       <h1 className="page-title">things</h1>
       <p className="page-desc">what i have made</p>
 
-      <div className="tree">
+      <div className="tree tree-links">
         <div className="tree-item">
-          <Link href="/things/cajal-health">cajal health</Link>
+          <a href="https://cajalhealth.org" target="_blank" rel="noopener noreferrer">cajal health</a>
         </div>
         <div className="tree-item">
           <Link href="/things/assesskit">assesskit</Link>
