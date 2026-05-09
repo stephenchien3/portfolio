@@ -41,14 +41,10 @@ function Ticker({ ticks, repeats = 3 }: { ticks: Tick[]; repeats?: number }) {
 export default async function BorderMarquee() {
   const { indices, stocks, mixed } = await fetchAllQuotes();
 
-  const top = indices.length ? indices : stocks;
-  const bottom = stocks.length ? stocks : indices;
-  const left = mixed.length ? mixed : indices;
-  const right = stocks.length ? stocks : indices;
-
-  if (!top.length && !bottom.length && !left.length && !right.length) {
-    return null;
-  }
+  const top = indices;
+  const bottom = stocks;
+  const left = mixed;
+  const right = stocks;
 
   return (
     <div

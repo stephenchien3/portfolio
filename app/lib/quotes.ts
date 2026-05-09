@@ -119,15 +119,58 @@ function specsToTicks(specs: SymbolSpec[], rows: Map<string, StooqRow>): Tick[] 
   return out;
 }
 
+const FALLBACK_INDICES: Tick[] = [
+  { symbol: '^spx', display: 'S&P 500', price: 7398.9, change: 61.8 },
+  { symbol: '^dji', display: 'DOW', price: 49609.2, change: 12.2 },
+  { symbol: '^ndq', display: 'NASDAQ', price: 26247.08, change: 440.88 },
+  { symbol: 'iwm.us', display: 'RUSSELL 2K', price: 284.17, change: 1.91 },
+  { symbol: '^ukx', display: 'FTSE 100', price: 10233.1, change: -43.9 },
+  { symbol: '^nkx', display: 'NIKKEI', price: 62713.65, change: -120.19 },
+  { symbol: '^hsi', display: 'HANG SENG', price: 26393.71, change: -232.57 },
+];
+
+const FALLBACK_STOCKS: Tick[] = [
+  { symbol: 'aapl.us', display: 'AAPL', price: 293.32, change: 5.88 },
+  { symbol: 'msft.us', display: 'MSFT', price: 415.12, change: -5.65 },
+  { symbol: 'googl.us', display: 'GOOGL', price: 400.8, change: 2.81 },
+  { symbol: 'amzn.us', display: 'AMZN', price: 272.68, change: 1.51 },
+  { symbol: 'nvda.us', display: 'NVDA', price: 215.2, change: 3.7 },
+  { symbol: 'meta.us', display: 'META', price: 609.63, change: -7.18 },
+  { symbol: 'tsla.us', display: 'TSLA', price: 428.35, change: 16.56 },
+  { symbol: 'brk-b.us', display: 'BRK.B', price: 475.94, change: 0.86 },
+  { symbol: 'jpm.us', display: 'JPM', price: 302.1, change: -4.17 },
+  { symbol: 'v.us', display: 'V', price: 318.79, change: -2.49 },
+  { symbol: 'unh.us', display: 'UNH', price: 379.98, change: 10.24 },
+  { symbol: 'xom.us', display: 'XOM', price: 144.57, change: -2.01 },
+  { symbol: 'wmt.us', display: 'WMT', price: 130.43, change: 0.23 },
+  { symbol: 'avgo.us', display: 'AVGO', price: 430, change: 17.44 },
+  { symbol: 'lly.us', display: 'LLY', price: 948.45, change: -26.51 },
+];
+
+const FALLBACK_MIXED: Tick[] = [
+  { symbol: 'btcusd', display: 'BTC', price: 80142.3, change: 388.6 },
+  { symbol: 'eth.v', display: 'ETH', price: 2313.11, change: -1.33 },
+  { symbol: 'sol.v', display: 'SOL', price: 93.45, change: 1.14 },
+  { symbol: 'eurusd', display: 'EUR/USD', price: 1.17803, change: 0.00534 },
+  { symbol: 'usdjpy', display: 'USD/JPY', price: 156.7315, change: -0.117 },
+  { symbol: 'gbpusd', display: 'GBP/USD', price: 1.36282, change: 0.00745 },
+  { symbol: 'xauusd', display: 'GOLD', price: 4724.2, change: 36.89 },
+  { symbol: 'xagusd', display: 'SILVER', price: 80.678, change: 2.141 },
+  { symbol: 'cl.f', display: 'OIL WTI', price: 95.42, change: 0.61 },
+];
+
 export async function fetchAllQuotes(): Promise<{
   indices: Tick[];
   stocks: Tick[];
   mixed: Tick[];
 }> {
   const rows = await fetchAllFromStooq();
+  const indices = specsToTicks(INDEX_SPECS, rows);
+  const stocks = specsToTicks(STOCK_SPECS, rows);
+  const mixed = specsToTicks(MIXED_SPECS, rows);
   return {
-    indices: specsToTicks(INDEX_SPECS, rows),
-    stocks: specsToTicks(STOCK_SPECS, rows),
-    mixed: specsToTicks(MIXED_SPECS, rows),
+    indices: indices.length ? indices : FALLBACK_INDICES,
+    stocks: stocks.length ? stocks : FALLBACK_STOCKS,
+    mixed: mixed.length ? mixed : FALLBACK_MIXED,
   };
 }
