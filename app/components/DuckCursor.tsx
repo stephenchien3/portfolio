@@ -29,6 +29,9 @@ export default function CursorTrail() {
     const ctx = canvas.getContext('2d', { alpha: true });
     if (!ctx) return;
 
+    // Skip on touch / no-hover devices — there's no cursor to trail.
+    if (window.matchMedia('(hover: none)').matches) return;
+
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
     const resize = () => {

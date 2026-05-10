@@ -156,17 +156,12 @@ body {
 .home-container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
-  height: 100vh;
-  overflow: hidden;
+  padding: 40px 28px;
+  min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-body:has(.home-container) {
-  overflow: hidden;
 }
 
 .home-layout {
@@ -262,6 +257,7 @@ body:has(.home-container) {
   font-size: 0.9em;
   color: #666;
   margin-left: 0.3rem;
+  word-break: break-word;
 }
 
 /* Nested tree */
@@ -414,5 +410,61 @@ body:has(.home-container) {
 
   .art-info {
     flex: 1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+  /* Hide ticker borders on small screens — they steal too much viewport */
+  .marquee {
+    display: none;
+  }
+
+  .home-container {
+    padding: 32px 20px 48px;
+    min-height: auto;
+    justify-content: flex-start;
+  }
+
+  .home-layout {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .profile-image {
+    width: 140px;
+    height: 187px;
+  }
+
+  .site-title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .tree {
+    margin-left: 0;
+  }
+
+  .tree-item {
+    padding-left: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .tree-item .desc {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.15rem;
+  }
+
+  .page-container,
+  .detail-container {
+    padding: 28px 20px 48px;
+    max-width: 100%;
+  }
+
+  .page-title,
+  .detail-title {
+    font-size: 1.5rem;
   }
 }
