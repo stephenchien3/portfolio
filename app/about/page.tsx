@@ -15,11 +15,11 @@ export default function About() {
       <h1 className="page-title">about</h1>
       <p className="page-desc">cs @ cornell</p>
 
-      <div className="tree" style={{ marginTop: '2rem' }}>
-        <div className="tree-item">
-          <Link href="/about/now">now</Link>
-          <span className="desc">what i am doing</span>
-        </div>
+      <div className="detail-content">
+        <p>
+          Finishing my cs masters at Cornell, building new projects, working on{' '}
+          <a href="https://cajalhealth.org" target="_blank" rel="noopener noreferrer">cajal health</a>.
+        </p>
       </div>
     </main>
   );

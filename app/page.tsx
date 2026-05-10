@@ -12,11 +12,6 @@ export default function Home() {
         <div className="tree-item">
           <Link href="/about">about</Link>
           <span className="desc">cs @ cornell</span>
-          <div className="tree">
-            <div className="tree-item">
-              <Link href="/about/now">now</Link>
-            </div>
-          </div>
         </div>
 
         <div className="tree-item">
