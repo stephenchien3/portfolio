@@ -40,7 +40,6 @@ export default function Home() {
 
         <div className="tree-item">
           <Link href="/writings">writings</Link>
-          <span className="desc">i also like to write things</span>
         </div>
 
         <div className="tree-item">
