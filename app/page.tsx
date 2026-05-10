@@ -6,7 +6,7 @@ export default function Home() {
     <main className="home-container">
       <div className="home-layout">
         <div className="home-content">
-          <p className="site-status">open to full time roles</p>
+          <p className="site-status">open to full time swe roles</p>
           <h1 className="site-title">stephen chien</h1>
           <div className="tree">
         <div className="tree-item">
