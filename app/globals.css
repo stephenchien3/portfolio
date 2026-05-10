@@ -426,44 +426,61 @@ body {
   }
 
   .home-container {
-    padding: 20px 18px;
+    padding: 0;
     min-height: 100dvh;
     max-height: 100dvh;
     height: 100dvh;
     overflow: hidden;
-    justify-content: center;
+    justify-content: stretch;
   }
 
   .home-layout {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 18px 18px 18px 18px;
+    box-sizing: border-box;
+  }
+
+  .home-content {
+    flex: 1 1 auto;
+    min-width: 0;
+    align-self: center;
   }
 
   .profile-image {
-    display: none;
+    display: block;
+    width: 38vw;
+    max-width: 200px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    flex-shrink: 0;
+    border-radius: 4px;
   }
 
   .site-status {
-    font-size: 0.8em;
-    margin-bottom: 0.25rem;
+    font-size: 0.85em;
+    margin-bottom: 0.3rem;
   }
 
   .site-title {
-    font-size: 1.5rem;
-    margin-bottom: 0.85rem;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
   }
 
   .home-container .tree-item {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
   }
 
   .home-container .tree .tree {
-    margin-top: 0.35rem;
+    margin-top: 0.4rem;
   }
 
   .home-container .tree .tree .tree-item {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
   }
 
   .tree {

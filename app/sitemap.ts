@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/research/labs/gao",
     "/research/publications",
     "/writings",
-    "/writings/brief-story",
+    "/writings/exodus",
   ];
 
   return routes.map((route) => ({

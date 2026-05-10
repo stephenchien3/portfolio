@@ -19,7 +19,7 @@ export default function Writings() {
 
       <div className="tree">
         <div className="tree-item">
-          <Link href="/writings/brief-story">a brief story</Link>
+          <Link href="/writings/exodus">exodus</Link>
         </div>
       </div>
     </main>

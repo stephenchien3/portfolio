@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import BackButton from '../../components/BackButton';
 
-export default function BriefStory() {
+export default function Exodus() {
   return (
     <main className="page-container">
       <div className="breadcrumb">
@@ -9,12 +9,12 @@ export default function BriefStory() {
         <span>/</span>
         <Link href="/writings">writings</Link>
         <span>/</span>
-        <span>a brief story</span>
+        <span>exodus</span>
       </div>
 
       <BackButton />
 
-      <h1 className="page-title">a brief story</h1>
+      <h1 className="page-title">exodus</h1>
       <p className="page-desc">A short story inspired by Cormac McCarthy and Thoreau's Walden.</p>
 
       <div className="detail-content" style={{ lineHeight: '1.8' }}>
