@@ -6,6 +6,7 @@ export default function Home() {
     <main className="home-container">
       <div className="home-layout">
         <div className="home-content">
+          <p className="site-status">open to full time roles</p>
           <h1 className="site-title">stephen chien</h1>
           <div className="tree">
         <div className="tree-item">
@@ -55,6 +56,8 @@ export default function Home() {
             <a href="https://linkedin.com/in/stephenlchien" target="_blank" rel="noopener noreferrer">linkedin</a>
             {', '}
             <a href="mailto:slc292@cornell.edu">email</a>
+            {', '}
+            <a href="/assets/stephen_chien_resume.pdf" target="_blank" rel="noopener noreferrer">cv</a>
           </span>
         </div>
           </div>

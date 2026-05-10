@@ -204,6 +204,12 @@ body:has(.home-container) {
   text-align: left;
 }
 
+.site-status {
+  font-size: 0.85em;
+  color: #1a7f37;
+  margin: 0 0 0.5rem;
+}
+
 /* Tree structure */
 .tree {
   margin-left: 1rem;
