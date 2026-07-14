@@ -4,6 +4,8 @@ body {
   hyphens: none;
   -webkit-hyphens: none;
   -ms-hyphens: none;
+  background: #fff;
+  color: #000;
 }
 
 .marquee {
